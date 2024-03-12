@@ -1,0 +1,107 @@
+.features {
+  display: grid;
+  padding: 50px 20px 60px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 20px 100px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 120px;
+  }
+}
+.features__title {
+  font-family: "Montserratbold", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 64px;
+    margin-bottom: 60px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 80px;
+  }
+}
+.features__badge {
+  order: -2;
+}
+.features__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 32px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 50px;
+    column-gap: 30px;
+    text-align: left;
+  }
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: center;
+    row-gap: 0;
+  }
+}
+.features__item {
+  display: grid;
+  justify-items: center;
+  grid-template-areas:
+    "image"
+    "title"
+    "description";
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+      "image title"
+      "image description";
+    column-gap: 20px;
+    justify-items: start;
+
+    @media (min-width: $desktop-width) {
+      grid-template-areas:
+        "image"
+        "title"
+        "description";
+      justify-items: center;
+    }
+  }
+}
+.features__item-title {
+  grid-area: title;
+  font-family: "Montserratbold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+}
+.features__item-image {
+  grid-area: image;
+  margin-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+.features__item-description {
+  grid-area: description;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

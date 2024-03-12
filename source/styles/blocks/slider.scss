@@ -24,10 +24,10 @@
 .slider-item__title {
   margin: 0;
   margin-bottom: 10px;
+  font-family: "Montserratbold", "Arial", sans-serif;
   font-size: 36px;
   line-height: 48px;
   letter-spacing: 0.72px;
-  font-weight: 700;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -79,8 +79,8 @@
   text-decoration: line-through;
 }
 .slider-item__price {
+  font-family: "Montserratbold", "Arial", sans-serif;
   font-size: 20px;
-  font-weight: 600;
   line-height: 32px;
 }
 .slider-item__picture {
@@ -116,6 +116,7 @@
   &:active {
     background-color: $alt-primary-opacity;
   }
+  
 }
 .current {
   background-color: $base-primary;

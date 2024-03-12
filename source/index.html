@@ -2,10 +2,15 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="styles/styles.css" />
-    <script src="scripts/index.js" defer></script>
   </head>
 
   <body class="page page__body">
@@ -120,13 +125,13 @@
                     media="(min-width: 768px)"
                     srcset="
                       ./images/slider/1-tablet@1x.png 1x,
-                      ./images/slider/1-tablet@1x.png 2x
+                      ./images/slider/1-tablet@2x.png 2x
                     "
                   />
                   <img
                     src="./images/slider/1-mobile@1x.png"
                     class="slider-item__image"
-                    srcset="./images/slider/1-mobile@1x.png 2x"
+                    srcset="./images/slider/1-mobile@2x.png 2x"
                     width="280"
                     height="280"
                     alt="Жестяная банка"
@@ -162,30 +167,58 @@
       </section>
 
       <section class="features">
-        <h2>Главные причины выбрать Drink2Go</h2>
-        <span class="badge">Преимущества</span>
+        <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
+        <span class="features__badge badge">Преимущества</span>
         <ul class="features__list">
           <li class="features__item features__item--speed">
-            <h3 class="features__title">Скорость</h3>
-            <p class="features__description">
+            <h3 class="features__item-title">Скорость</h3>
+            <img
+              class="features__item-image"
+              src="./images/icons/speed.svg"
+              width="52"
+              height="56"
+              alt="Таймер"
+            />
+            <p class="features__item-description">
               Готовый напиток всегда под рукой — просто открой банку
             </p>
           </li>
           <li class="features__item features__item--fit">
-            <h3 class="features__title">Удобство</h3>
-            <p class="features__description">
+            <h3 class="features__item-title">Удобство</h3>
+            <img
+              class="features__item-image"
+              src="./images/icons/fit.svg"
+              width="52"
+              height="56"
+              alt="Карман"
+            />
+            <p class="features__item-description">
               Легко помещается и в карман, и в маленькую сумочку
             </p>
           </li>
           <li class="features__item features__item--energy">
-            <h3 class="features__title">Бодрость</h3>
-            <p class="features__description">
+            <h3 class="features__item-title">Бодрость</h3>
+            <img
+              class="features__item-image"
+              src="./images/icons/energy.svg"
+              width="52"
+              height="56"
+              alt="Молния"
+            />
+            <p class="features__item-description">
               Сбалансированная доза кофеина даст мощный заряд энергии
             </p>
           </li>
           <li class="features__item features__item--eco">
-            <h3 class="features__title">Экологичность</h3>
-            <p class="features__description">
+            <h3 class="features__item-title">Экологичность</h3>
+            <img
+              class="features__item-image"
+              src="./images/icons/eco.svg"
+              width="52"
+              height="56"
+              alt="Лист дерева"
+            />
+            <p class="features__item-description">
               Вся упаковка сделана из перерабатываемых материалов
             </p>
           </li>
@@ -344,12 +377,30 @@
         </div>
 
         <ul class="products-list">
-          <li class="products-list-item">
-            <h3>Декаф Флэт Уайт</h3>
-            <p>Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-            <p>225₽</p>
-            <button class="button">В корзину</button>
-            <img src="" width="" height="" alt="" />
+          <li class="products-list__item">
+            <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
+            <p class="products-list__item-description">
+              Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+            </p>
+            <span class="products-list__item-price">225₽</span>
+            <button class="products-list__item-button button">В корзину</button>
+            <picture class="products-list__item-picture">
+              <source
+                type="image/webp"
+                srcset="
+                  ./images/catalog/1@1x.webp 1x,
+                  ./images/catalog/1@2x.webp 2x
+                "
+              />
+              <img
+                src="./images/catalog/1@1x.png"
+                class="products-list__item-image"
+                srcset="./images/catalog/1@2x.png 2x"
+                width="130"
+                height="188"
+                alt="Жестяная банка"
+              />
+            </picture>
           </li>
           <li class="products-list-item">
             <h3>Декаф Флэт Уайт</h3>
@@ -410,7 +461,57 @@
         </ul>
       </section>
 
-      <section class="map"></section>
+      <section>
+        <h2 class="visually-hidden">Карта</h2>
+        <div id="map" class="map">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                ./images/map-desktop@1x.webp 1x,
+                ./images/map-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                ./images/map-tablet@1x.webp 1x,
+                ./images/map-tablet@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="
+                ./images/map-mobile@1x.webp 1x,
+                ./images/map-mobile@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                ./images/map-desktop@1x.png 1x,
+                ./images/map-desktop@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./images/map-tablet@1x.png 1x,
+                ./images/map-tablet@2x.png 2x
+              "
+            />
+            <img
+              src="./images/map-mobile@1x.png"
+              srcset="./images/map-mobile@2x.png 2x"
+              width="320"
+              height="420"
+              alt="Карта с указателем"
+            />
+          </picture>
+        </div>
+      </section>
     </main>
 
     <footer class="page-footer">
@@ -522,5 +623,11 @@
         </a>
       </div>
     </footer>
+    <script src="scripts/index.js" defer></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
   </body>
 </html>
