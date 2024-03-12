@@ -3,3 +3,63 @@
   margin: 0;
   padding: 0;
 }
+.products-list__item {
+  display: grid;
+}
+.products-list__item-title-link {
+  color: $base-black;
+  margin-bottom: 4px;
+}
+.products-list__item-title {
+  font-family: "Montserratbold", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+.products-list__item-description {
+  margin: 0;
+  margin-bottom: 16px;
+}
+.products-list__item-order {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.products-list__item-price {
+  font-family: "Montserratsemibold", "Arial", sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+}
+.products-list__item-button {
+  width: 141px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 8px 20px 8px 46px;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    left: 20px;
+    background-image: url(../../images/icons/cart-plus.svg);
+  }
+}
+.products-list__item-picture-link {
+  order: -2;
+  justify-self: center;
+  margin-bottom: 24px;
+}
