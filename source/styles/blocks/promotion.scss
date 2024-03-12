@@ -1,0 +1,106 @@
+.promotion {
+  background-color: $bg-flat-white;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(
+      $bg-flat-white 0%,
+      $bg-flat-white 71%,
+      $base-white 71%
+    );
+  }
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 84px;
+    background: $bg-flat-white;
+  }
+}
+.promotion__actions {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 80px 1fr 80px;
+  }
+}
+.promotion__button {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background-color: unset;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 20px;
+    top: 50%;
+    left: calc(50% - 5px);
+    background-image: url("../../images/icons/arrow.svg");
+  }
+
+  //   &:disabled {
+  //     &::before {
+  //       fill: $base-grey; // arrow!
+  //     }
+  //   }
+}
+.promotion__button--previous {
+  &:hover {
+    background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
+  }
+  &:active {
+    background: linear-gradient(
+      90deg,
+      rgba(120, 89, 207, 0.25) 0%,
+      rgba(120, 89, 207, 0) 100%
+    );
+  }
+}
+.promotion__button--next {
+  &::before {
+    transform: rotate(180deg);
+  }
+  &:hover {
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
+  }
+  &:active {
+    background: linear-gradient(
+      90deg,
+      rgba(120, 89, 207, 0) 0%,
+      rgba(120, 89, 207, 0.25) 100%
+    );
+  }
+}
+.promotion__slider-wrapper {
+  position: relative;
+}
+.promotion__slider {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
+}
+.promotion-slider-controls {
+  display: none;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    position: absolute;
+    width: 202px;
+    height: 24px;
+    align-items: center;
+    justify-content: space-between;
+    left: calc(50% - 101px);
+    z-index: 20;
+  }
+}

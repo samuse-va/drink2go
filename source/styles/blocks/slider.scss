@@ -1,0 +1,122 @@
+.slider-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.slider-item__text-wrapper {
+  display: grid;
+  justify-items: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    justify-items: left;
+    order: 2;
+  }
+}
+.slider-item__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.72px;
+  font-weight: 700;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+    font-size: 56px;
+    line-height: 80px;
+    letter-spacing: 1.12px;
+  }
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+.slider-item__badge {
+  order: -1;
+}
+.slider-item__description {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+    max-width: 608px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+    text-align: left;
+  }
+}
+.slider-item__order-info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+.slider-item__price-info {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.slider-item__price--old {
+  color: $base-primary;
+  font-size: 16px;
+  line-height: 32px;
+  text-decoration: line-through;
+}
+.slider-item__price {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+}
+.slider-item__picture {
+  @media (max-width: $mobile-width-only) {
+    margin-bottom: 10px;
+    order: -2;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 25px;
+  }
+}
+.slider-item__image {
+  width: 280px;
+  height: 280px;
+  @media (min-width: $tablet-width) {
+    width: 476px;
+    height: 476px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    height: 600px;
+  }
+}
+.slider-button {
+  border: none;
+  padding: 0;
+  width: 62px;
+  height: 4px;
+  background-color: $base-white;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: $alt-primary-opacity;
+  }
+}
+.current {
+  background-color: $base-primary;
+}
