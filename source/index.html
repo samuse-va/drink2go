@@ -226,247 +226,414 @@
       </section>
 
       <section class="catalog">
-        <h2>Каталог кофейных напитков</h2>
-        <span class="badge">Каталог</span>
-        <form class="filter" method="get" action="">
-          <fieldset class="price">
-            <legend class="filter-field">Цена</legend>
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar" style="width: 30%; margin-left: 20%"></div>
+        <h2 class="catalog__title">Каталог кофейных напитков</h2>
+        <span class="catalog__badge badge">Каталог</span>
+        <div class="catalog__wrapper">
+          <form
+            class="catalog__filters"
+            method="get"
+            action="https://echo.htmlacademy.ru"
+          >
+            <div class="catalog__filter-wrapper">
+              <fieldset class="catalog__fieldset filter price">
+                <legend class="filter__field">Цена</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div
+                        class="bar"
+                        style="width: 30%; margin-left: 20%"
+                      ></div>
+                    </div>
+                    <div
+                      class="toggle toggle-min"
+                      tabindex="0"
+                      style="left: 20%"
+                    ></div>
+                    <div
+                      class="toggle toggle-max"
+                      tabindex="0"
+                      style="left: 50%"
+                    ></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">
+                      от <input type="number" name="min-price" value="0" />
+                    </label>
+                    <label class="max-price">
+                      до <input type="number" name="max-price" value="150000" />
+                    </label>
+                  </div>
                 </div>
-                <div
-                  class="toggle toggle-min"
-                  tabindex="0"
-                  style="left: 20%"
-                ></div>
-                <div
-                  class="toggle toggle-max"
-                  tabindex="0"
-                  style="left: 50%"
-                ></div>
-              </div>
-              <div class="price-controls">
-                <label class="min-price">
-                  от <input type="number" name="min-price" value="0" />
-                </label>
-                <label class="max-price">
-                  до <input type="number" name="max-price" value="150000" />
-                </label>
-              </div>
+              </fieldset>
+
+              <fieldset class="catalog__fieldset filter milk">
+                <legend class="filter__field">Наличие молока</legend>
+                <ul class="filter__options-list">
+                  <li class="filter__option">
+                    <input
+                      type="radio"
+                      class="filter__input-radio visually-hidden"
+                      name="milk"
+                      value="no-matter"
+                      id="filter-no-matter"
+                      checked
+                    />
+                    <label for="filter-no-matter">Неважно</label>
+                  </li>
+                  <li class="filter__option">
+                    <input
+                      type="radio"
+                      class="filter__input-radio visually-hidden"
+                      name="milk"
+                      value="animal"
+                      id="filter-animal"
+                    />
+                    <label for="filter-animal">Только животное</label>
+                  </li>
+                  <li class="filter__option">
+                    <input
+                      type="radio"
+                      class="filter__input-radio visually-hidden"
+                      name="milk"
+                      value="plant"
+                      id="filter-plant"
+                    />
+                    <label for="filter-plant">Только растительное</label>
+                  </li>
+                  <li class="filter__option">
+                    <input
+                      type="radio"
+                      class="filter__input-radio visually-hidden"
+                      name="milk"
+                      value="no-milk"
+                      id="filter-no-milk"
+                    />
+                    <label for="filter-no-milk">Без молока</label>
+                  </li>
+                </ul>
+              </fieldset>
+
+              <fieldset class="catalog__fieldset filter country">
+                <legend class="filter__field">Страна произрастания</legend>
+                <ul class="filter__options-list">
+                  <li class="filter__option">
+                    <input
+                      type="checkbox"
+                      class="filter__input-checkbox visually-hidden"
+                      name="brazil"
+                      id="filter-brazil"
+                      checked
+                    />
+                    <label for="filter-brazil">Бразилия</label>
+                  </li>
+
+                  <li class="filter__option">
+                    <input
+                      type="checkbox"
+                      class="filter__input-checkbox visually-hidden"
+                      name="ethiopia"
+                      id="filter-ethiopia"
+                      class="visually-hidden"
+                    />
+                    <label for="filter-ethiopia">Эфиопия</label>
+                  </li>
+
+                  <li class="filter__option">
+                    <input
+                      type="checkbox"
+                      class="filter__input-checkbox visually-hidden"
+                      name="colombia"
+                      id="filter-colombia"
+                      checked
+                    />
+                    <label for="filter-colombia">Колумбия</label>
+                  </li>
+
+                  <li class="filter__option">
+                    <input
+                      type="checkbox"
+                      class="filter__input-checkbox visually-hidden"
+                      name="costa-rica"
+                      id="filter-costa-rica"
+                    />
+                    <label for="filtercosta-rica">Коста-Рика</label>
+                  </li>
+
+                  <li class="filter__option">
+                    <input
+                      type="checkbox"
+                      class="filter__input-checkbox visually-hidden"
+                      name="peru"
+                      id="filter-peru"
+                    />
+                    <label for="filter-peru">Перу</label>
+                  </li>
+                </ul>
+              </fieldset>
             </div>
-          </fieldset>
 
-          <fieldset class="milk">
-            <legend class="filter-field">Наличие молока</legend>
-            <ul>
-              <li class="filter-option">
-                <input
-                  type="radio"
-                  class="filter-input-radio visually-hidden"
-                  name="milk"
-                  value="no-matter"
-                  id="filter-no-matter"
-                  checked
-                />
-                <label for="filter-no-matter">Неважно</label>
-              </li>
-              <li class="filter-option">
-                <input
-                  type="radio"
-                  class="filter-input-radio visually-hidden"
-                  name="milk"
-                  value="animal"
-                  id="filter-animal"
-                />
-                <label for="filter-animal">Только животное</label>
-              </li>
-              <li class="filter-option">
-                <input
-                  type="radio"
-                  class="filter-input-radio visually-hidden"
-                  name="milk"
-                  value="plant"
-                  id="filter-plant"
-                />
-                <label for="filter-plant">Только растительное</label>
-              </li>
-              <li class="filter-option">
-                <input
-                  type="radio"
-                  class="filter-input-radio visually-hidden"
-                  name="milk"
-                  value="no-milk"
-                  id="filter-no-milk"
-                />
-                <label for="filter-no-milk">Без молока</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <fieldset class="country">
-            <legend class="filter-field">Страна произрастания</legend>
-            <ul>
-              <li class="filter-option">
-                <input
-                  type="checkbox"
-                  class="filter-input-checkbox visually-hidden"
-                  name="brazil"
-                  id="filter-brazil"
-                  checked
-                />
-                <label for="filter-brazil">Бразилия</label>
-              </li>
-
-              <li class="filter-option">
-                <input
-                  type="checkbox"
-                  class="filter-input-checkbox visually-hidden"
-                  name="ethiopia"
-                  id="filter-ethiopia"
-                  class="visually-hidden"
-                />
-                <label for="filter-ethiopia">Эфиопия</label>
-              </li>
-
-              <li class="filter-option">
-                <input
-                  type="checkbox"
-                  class="filter-input-checkbox visually-hidden"
-                  name="colombia"
-                  id="filter-colombia"
-                  checked
-                />
-                <label for="filter-colombia">Колумбия</label>
-              </li>
-
-              <li class="filter-option">
-                <input
-                  type="checkbox"
-                  class="filter-input-checkbox visually-hidden"
-                  name="costa-rica"
-                  id="filter-costa-rica"
-                />
-                <label for="filter-costa-rica">Коста-Рика</label>
-              </li>
-
-              <li class="filter-option">
-                <input
-                  type="checkbox"
-                  class="filter-input-checkbox visually-hidden"
-                  name="peru"
-                  id="filter-peru"
-                />
-                <label for="filter-peru">Перу</label>
-              </li>
-            </ul>
-          </fieldset>
-
-          <button type="submit" class="filter-button button">Применить</button>
-          <button type="button" class="filter-button button">Сбросить</button>
-        </form>
-
-        <div class="sorting">
-          <p class="filter-field">Сортировка:</p>
-          <ul class="sorting-ul">
-            <li class="sorting-li-current">
-              <button class="sorting-button">По умолчанию</button>
-            </li>
-          </ul>
-        </div>
-
-        <ul class="products-list">
-          <li class="products-list__item">
-            <a href="#" class="products-list__item-title-link">
-              <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
-            </a>
-            <p class="products-list__item-description">
-              Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-            </p>
-            <div class="products-list__item-order">
-              <span class="products-list__item-price">225₽</span>
-              <button class="products-list__item-button button--add">
-                В корзину
+            <div class="catalog__filters-buttons-wrapper">
+              <button
+                type="submit"
+                class="catalog__filters-button button button--add"
+              >
+                Применить
+              </button>
+              <button
+                type="button"
+                class="catalog__filters-button button button--unset"
+              >
+                Сбросить
               </button>
             </div>
-            <a href="#" class="products-list__item-picture-link">
-              <picture class="products-list__item-picture">
-                <source
-                  type="image/webp"
-                  srcset="
-                    ./images/catalog/1@1x.webp 1x,
-                    ./images/catalog/1@2x.webp 2x
-                  "
-                />
-                <img
-                  src="./images/catalog/1@1x.png"
-                  class="products-list__item-image"
-                  srcset="./images/catalog/1@2x.png 2x"
-                  width="130"
-                  height="188"
-                  alt="Жестяная банка"
-                />
-              </picture>
-            </a>
-          </li>
-          <li class="products-list-item">
-            <h3>Декаф Флэт Уайт</h3>
-            <p>Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-            <p>225₽</p>
-            <button class="button">В корзину</button>
-            <img src="" width="" height="" alt="" />
-          </li>
-          <li class="products-list-item">
-            <h3>Декаф Флэт Уайт</h3>
-            <p>Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-            <p>225₽</p>
-            <button class="button">В корзину</button>
-            <img src="" width="" height="" alt="" />
-          </li>
-          <li class="products-list-item">
-            <h3>Декаф Флэт Уайт</h3>
-            <p>Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-            <p>225₽</p>
-            <button class="button">В корзину</button>
-            <img src="" width="" height="" alt="" />
-          </li>
-          <li class="products-list-item">
-            <h3>Декаф Флэт Уайт</h3>
-            <p>Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-            <p>225₽</p>
-            <button class="button">В корзину</button>
-            <img src="" width="" height="" alt="" />
-          </li>
-          <li class="products-list-item">
-            <h3>Декаф Флэт Уайт</h3>
-            <p>Кофе без кофеина из Эфиопии с натуральным фермерским молоком</p>
-            <p>225₽</p>
-            <button class="button">В корзину</button>
-            <img src="" width="" height="" alt="" />
-          </li>
-        </ul>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a href="#" class="page-previous" aria-label="Следующая страница"
-              >Предыдущая</a
-            >
-          </li>
-          <li class="pagination-item">
-            <a class="page-current" aria-label="Страница 1">1</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#" class="page-next" aria-label="Страница 2">2</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#" class="page-next" aria-label="Страница 3">3</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#" class="page-next" aria-label="Следующая страница"
-              >Следующая</a
-            >
-          </li>
-        </ul>
+          </form>
+
+          <div class="products-list__wrapper">
+            <div class="sorting">
+              <p class="sorting__title">Сортировка:</p>
+              <select class="sorting__select">
+                <option class="sorting__select-item" value="default" selected>
+                  по умолчанию
+                </option>
+                <option class="sorting__select-item" value="expensive">
+                  сначала дорогие
+                </option>
+                <option class="sorting__select-item" value="cheap">
+                  сначала дешёвые
+                </option>
+                <option class="sorting__select-item" value="rating">
+                  высокий рейтинг
+                </option>
+              </select>
+            </div>
+
+            <ul class="products-list">
+              <li class="products-list__item">
+                <a href="#" class="products-list__item-title-link">
+                  <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="products-list__item-description">
+                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                </p>
+                <div class="products-list__item-order">
+                  <span class="products-list__item-price">225₽</span>
+                  <button class="products-list__item-button button--add">
+                    В корзину
+                  </button>
+                </div>
+                <a href="#" class="products-list__item-picture-link">
+                  <picture class="products-list__item-picture">
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./images/catalog/1@1x.webp 1x,
+                        ./images/catalog/1@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./images/catalog/1@1x.png"
+                      class="products-list__item-image"
+                      srcset="./images/catalog/1@2x.png 2x"
+                      width="130"
+                      height="188"
+                      alt="Жестяная банка"
+                    />
+                  </picture>
+                </a>
+              </li>
+              <li class="products-list__item">
+                <a href="#" class="products-list__item-title-link">
+                  <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="products-list__item-description">
+                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                </p>
+                <div class="products-list__item-order">
+                  <span class="products-list__item-price">225₽</span>
+                  <button class="products-list__item-button button--add">
+                    В корзину
+                  </button>
+                </div>
+                <a href="#" class="products-list__item-picture-link">
+                  <picture class="products-list__item-picture">
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./images/catalog/2@1x.webp 1x,
+                        ./images/catalog/2@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./images/catalog/2@1x.png"
+                      class="products-list__item-image"
+                      srcset="./images/catalog/2@2x.png 2x"
+                      width="130"
+                      height="188"
+                      alt="Жестяная банка"
+                    />
+                  </picture>
+                </a>
+              </li>
+              <li class="products-list__item">
+                <a href="#" class="products-list__item-title-link">
+                  <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="products-list__item-description">
+                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                </p>
+                <div class="products-list__item-order">
+                  <span class="products-list__item-price">225₽</span>
+                  <button class="products-list__item-button button--add">
+                    В корзину
+                  </button>
+                </div>
+                <a href="#" class="products-list__item-picture-link">
+                  <picture class="products-list__item-picture">
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./images/catalog/3@1x.webp 1x,
+                        ./images/catalog/3@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./images/catalog/3@1x.png"
+                      class="products-list__item-image"
+                      srcset="./images/catalog/3@2x.png 2x"
+                      width="130"
+                      height="188"
+                      alt="Жестяная банка"
+                    />
+                  </picture>
+                </a>
+              </li>
+              <li class="products-list__item">
+                <a href="#" class="products-list__item-title-link">
+                  <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="products-list__item-description">
+                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                </p>
+                <div class="products-list__item-order">
+                  <span class="products-list__item-price">225₽</span>
+                  <button class="products-list__item-button button--add">
+                    В корзину
+                  </button>
+                </div>
+                <a href="#" class="products-list__item-picture-link">
+                  <picture class="products-list__item-picture">
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./images/catalog/4@1x.webp 1x,
+                        ./images/catalog/4@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./images/catalog/4@1x.png"
+                      class="products-list__item-image"
+                      srcset="./images/catalog/4@2x.png 2x"
+                      width="130"
+                      height="188"
+                      alt="Жестяная банка"
+                    />
+                  </picture>
+                </a>
+              </li>
+              <li class="products-list__item">
+                <a href="#" class="products-list__item-title-link">
+                  <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="products-list__item-description">
+                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                </p>
+                <div class="products-list__item-order">
+                  <span class="products-list__item-price">225₽</span>
+                  <button class="products-list__item-button button--add">
+                    В корзину
+                  </button>
+                </div>
+                <a href="#" class="products-list__item-picture-link">
+                  <picture class="products-list__item-picture">
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./images/catalog/5@1x.webp 1x,
+                        ./images/catalog/5@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./images/catalog/5@1x.png"
+                      class="products-list__item-image"
+                      srcset="./images/catalog/5@2x.png 2x"
+                      width="130"
+                      height="188"
+                      alt="Жестяная банка"
+                    />
+                  </picture>
+                </a>
+              </li>
+              <li class="products-list__item">
+                <a href="#" class="products-list__item-title-link">
+                  <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
+                </a>
+                <p class="products-list__item-description">
+                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                </p>
+                <div class="products-list__item-order">
+                  <span class="products-list__item-price">225₽</span>
+                  <button class="products-list__item-button button--add">
+                    В корзину
+                  </button>
+                </div>
+                <a href="#" class="products-list__item-picture-link">
+                  <picture class="products-list__item-picture">
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./images/catalog/6@1x.webp 1x,
+                        ./images/catalog/6@2x.webp 2x
+                      "
+                    />
+                    <img
+                      src="./images/catalog/6@1x.png"
+                      class="products-list__item-image"
+                      srcset="./images/catalog/6@2x.png 2x"
+                      width="130"
+                      height="188"
+                      alt="Жестяная банка"
+                    />
+                  </picture>
+                </a>
+              </li>
+            </ul>
+            <ul class="pagination">
+              <li class="pagination-item">
+                <a
+                  href="#"
+                  class="page-previous"
+                  aria-label="Следующая страница"
+                  >Предыдущая</a
+                >
+              </li>
+              <li class="pagination-item">
+                <a class="page-current" aria-label="Страница 1">1</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="page-next" aria-label="Страница 2">2</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="page-next" aria-label="Страница 3">3</a>
+              </li>
+              <li class="pagination-item">
+                <a href="#" class="page-next" aria-label="Следующая страница"
+                  >Следующая</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section>
