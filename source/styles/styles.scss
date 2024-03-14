@@ -5,15 +5,21 @@
 
 /* BLOCKS */
 @import "./blocks/page.scss";
+@import "./blocks/page-header.scss";
 @import "./blocks/header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/user-list.scss";
 @import "./blocks/promotion.scss";
 @import "./blocks/slider.scss";
 @import "./blocks/badge.scss";
 @import "./blocks/button.scss";
 @import "./blocks/features.scss";
 @import "./blocks/catalog.scss";
+@import "./blocks/price.scss";
 @import "./blocks/filter.scss";
 @import "./blocks/sorting.scss";
 @import "./blocks/products-list.scss";
+@import "./blocks/pagination.scss";
 
 @import "./blocks/map.scss";

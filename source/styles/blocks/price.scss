@@ -1,0 +1,72 @@
+.range-controls {
+  position: relative;
+  height: 24px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 3px;
+}
+
+.price-control {
+  width: 280px;
+}
+.range-controls .scale {
+  height: 2px;
+  background-color: $alt-light-grey;
+}
+
+.range-controls .bar {
+  width: 84%;
+  height: 4px;
+  background: $alt-primary-lighter;
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  box-sizing: border-box;
+  border: 2px solid $alt-primary-lighter;
+  background-color: $base-white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.range-controls .toggle-min {
+  left: 0;
+}
+
+.range-controls .toggle-max {
+  left: 84%;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+}
+
+.price-controls input {
+  width: 118px;
+  padding: 8px 10px;
+  box-sizing: border-box;
+  text-align: center;
+  color: $base-grey;
+  border: 2px solid $alt-primary-lighter;
+  border-radius: 4px;
+  background: $base-white;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

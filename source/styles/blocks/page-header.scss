@@ -1,0 +1,54 @@
+.page-header {
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
+  @media (min-width: $desktop-width) {
+    padding: 0 40px;
+  }
+}
+.page-header__logo-image {
+  @media (min-width: $tablet-width) {
+    width: 82px;
+    height: 36px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 170px;
+  }
+}
+.page-header--closed .page-header__nav-toggle {
+  background-image: url(../../img/open-menu.svg);
+}
+.page-header--opened .page-header__nav-toggle {
+  background-image: url(../../img/close-menu.svg);
+}
+.page-header__title {
+  display: none;
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+.page-header__nav-toggle {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  background-color: $base-white;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 22px 22px;
+  cursor: pointer;
+
+  &:active {
+    background-color: $base-secondary;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+.page-header--closed .page-header__nav-toggle {
+  background-image: url(../../images/icons/menu.svg);
+}
+//   .page-header--opened .page-header__nav-toggle {
+//     background-image: url(../../img/close-menu.svg);
+//   }
