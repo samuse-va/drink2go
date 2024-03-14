@@ -1,0 +1,44 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  gap: 3px;
+  font-size: 12px;
+  line-height: 16px;
+  color: $base-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+.copyright__link {
+  color: inherit;
+  display: flex;
+  gap: 4px;
+
+  svg {
+    path {
+      fill: $base-grey;
+    }
+  }
+
+  &:hover,
+  &:focus {
+    color: $base-primary;
+    svg {
+      path {
+        fill: $base-primary;
+      }
+    }
+  }
+  &:active {
+    color: $alt-primary-darker;
+    svg {
+      path {
+        fill: $alt-primary-darker;
+      }
+    }
+  }
+}
