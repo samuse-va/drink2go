@@ -1,4 +1,4 @@
-.promotion {
+.promotion--1 {
   background-color: $bg-flat-white;
 
   @media (min-width: $tablet-width) {
@@ -10,6 +10,34 @@
   }
   @media (min-width: $desktop-width) {
     background: $bg-flat-white;
+  }
+}
+.promotion--2 {
+  background-color: $bg-lavender-latte;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(
+      $bg-lavender-latte 0%,
+      $bg-lavender-latte 71%,
+      $base-white 71%
+    );
+  }
+  @media (min-width: $desktop-width) {
+    background: $bg-lavender-latte;
+  }
+}
+.promotion--3 {
+  background-color: $bg-espresso;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(
+      $bg-espresso 0%,
+      $bg-espresso 71%,
+      $base-white 71%
+    );
+  }
+  @media (min-width: $desktop-width) {
+    background: $bg-espresso;
   }
 }
 .promotion__actions {
@@ -98,7 +126,7 @@
   margin: 0;
   padding: 0;
 }
-.promotion-slider-controls {
+.promotion__slider-controls {
   display: none;
   @media (min-width: $desktop-width) {
     display: flex;
@@ -110,4 +138,20 @@
     left: calc(50% - 101px);
     z-index: 20;
   }
+}
+.promotion__slider-button {
+  border: none;
+  padding: 0;
+  width: 62px;
+  height: 4px;
+  background-color: $base-white;
+  cursor: pointer;
+
+  &:hover,
+  &:active {
+    background-color: $alt-primary-opacity;
+  }
+}
+.promotion__slider-button--current {
+  background-color: $base-primary;
 }

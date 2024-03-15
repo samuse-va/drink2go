@@ -101,7 +101,7 @@
       <h1 class="page-main__title visually-hidden">
         Интернет-магазин кофейных напитков
       </h1>
-      <section class="promotion">
+      <section class="promotion promotion--1">
         <h2 class="visually-hidden">Акции</h2>
         <div class="promotion__actions">
           <button
@@ -112,20 +112,20 @@
 
           <div class="promotion__slider-wrapper">
             <ul class="promotion__slider slider">
-              <li class="slider-item slider-item-flat slide slide-current">
-                <div class="slider-item__text-wrapper">
-                  <h3 class="slider-item__title">Декаф Флэт Уайт</h3>
-                  <span class="slider-item__badge badge">Новинка!</span>
-                  <p class="slider-item__description">
+              <li class="slider__item slider__item--current">
+                <div class="slider__item-text-wrapper">
+                  <h3 class="slider__item-title">Декаф Флэт Уайт</h3>
+                  <span class="slider__item-badge badge">Новинка!</span>
+                  <p class="slider__item-description">
                     Свежесваренный кофе без кофеина из Эфиопии с натуральным
                     фермерским молоком — то, что нужно для расслабления после
                     тяжёлого рабочего дня
                   </p>
 
-                  <div class="slider-item__order-info">
-                    <div class="slider-item__price-info">
-                      <span class="slider-item__price--old">295₽</span>
-                      <span class="slider-item__price">225₽</span>
+                  <div class="slider__item-order-info">
+                    <div class="slider__item-price-info">
+                      <span class="slider__item-price--old">295₽</span>
+                      <span class="slider__item-price">225₽</span>
                     </div>
                     <button
                       class="slider-item__button button button--add"
@@ -135,7 +135,7 @@
                     </button>
                   </div>
                 </div>
-                <picture class="slider-item__picture">
+                <picture class="slider__item-picture">
                   <source
                     type="image/webp"
                     media="(min-width: 1440px)"
@@ -175,7 +175,7 @@
                   />
                   <img
                     src="./images/slider/1-mobile@1x.png"
-                    class="slider-item__image"
+                    class="slider__item-image"
                     srcset="./images/slider/1-mobile@2x.png 2x"
                     width="280"
                     height="280"
@@ -183,21 +183,160 @@
                   />
                 </picture>
               </li>
+              <li class="slider__item">
+                <div class="slider__item-text-wrapper">
+                  <h3 class="slider__item-title">Лавандовый Латте</h3>
+                  <span class="slider__item-badge badge">Новинка!</span>
+                  <p class="slider__item-description">
+                    Невероятное сочетание перуанской высокогорной арабики с
+                    молоком ламы и лавандовым сиропом унесёт вас прямо на
+                    вершину Радужных гор
+                  </p>
+
+                  <div class="slider__item-order-info">
+                    <div class="slider__item-price-info">
+                      <span class="slider__item-price--old">285₽</span>
+                      <span class="slider__item-price">265₽</span>
+                    </div>
+                    <button class="button button--add" type="button">
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+                <picture class="slider__item-picture">
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/slider/2-desktop@1x.webp 1x,
+                      ./images/slider/2-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/slider/2-tablet@1x.webp 1x,
+                      ./images/slider/2-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/slider/2-mobile@1x.webp 1x,
+                      ./images/slider/2-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/slider/2-desktop@1x.png 1x,
+                      ./images/slider/2-desktop@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/slider/2-tablet@1x.png 1x,
+                      ./images/slider/2-tablet@2x.png 2x
+                    "
+                  />
+                  <img
+                    src="./images/slider/2-mobile@1x.png"
+                    class="slider__item-image"
+                    srcset="./images/slider/2-mobile@2x.png 2x"
+                    width="280"
+                    height="280"
+                    alt="Жестяная банка"
+                  />
+                </picture>
+              </li>
+              <li class="slider__item">
+                <div class="slider__item-text-wrapper">
+                  <h3 class="slider__item-title">Тройной Эспрессо</h3>
+                  <span class="slider__item-badge badge">Новинка!</span>
+                  <p class="slider__item-description">
+                    Мощнее укола адреналина, чернее самой тёмной ночи, этот
+                    тройной эспрессо из Колумбии покажет вам, что такое
+                    настоящая бодрость
+                  </p>
+
+                  <div class="slider__item-order-info">
+                    <div class="slider__item-price-info">
+                      <span class="slider__item-price--old">395₽</span>
+                      <span class="slider__item-price">375₽</span>
+                    </div>
+                    <button
+                      class="slider-item__button button button--add"
+                      type="button"
+                    >
+                      Заказать
+                    </button>
+                  </div>
+                </div>
+                <picture class="slider__item-picture">
+                  <source
+                    type="image/webp"
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/slider/3-desktop@1x.webp 1x,
+                      ./images/slider/3-desktop@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/slider/3-tablet@1x.webp 1x,
+                      ./images/slider/3-tablet@2x.webp 2x
+                    "
+                  />
+                  <source
+                    type="image/webp"
+                    srcset="
+                      ./images/slider/3-mobile@1x.webp 1x,
+                      ./images/slider/3-mobile@2x.webp 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 1440px)"
+                    srcset="
+                      ./images/slider/3-desktop@1x.png 1x,
+                      ./images/slider/3-desktop@2x.png 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/slider/3-tablet@1x.png 1x,
+                      ./images/slider/3-tablet@2x.png 2x
+                    "
+                  />
+                  <img
+                    src="./images/slider/3-mobile@1x.png"
+                    class="slider__item-image"
+                    srcset="./images/slider/3-mobile@2x.png 2x"
+                    width="280"
+                    height="280"
+                    alt="Жестяная банка"
+                  />
+                </picture>
+              </li>
             </ul>
-            <div class="promotion-slider-controls">
+            <div class="promotion__slider-controls">
               <button
                 type="button"
-                class="slider-button current"
+                class="promotion__slider-button promotion__slider-button--current"
                 aria-label="Первый слайд"
               ></button>
               <button
                 type="button"
-                class="slider-button"
+                class="promotion__slider-button"
                 aria-label="Второй слайд"
               ></button>
               <button
                 type="button"
-                class="slider-button"
+                class="promotion__slider-button"
                 aria-label="Третий слайд"
               ></button>
             </div>
