@@ -36,6 +36,26 @@ mainPinMarker.on("moveend", (evt) => {
   console.log(evt.target.getLatLng());
 });
 
+// Header
+
+const header = window.document.querySelector(".page-header");
+const navToggle = window.document.querySelector(".page-header__nav-toggle");
+
+header.classList.remove("page-header--nojs");
+header.classList.add("page-header--closed");
+
+navToggle.addEventListener("click", function () {
+  if (header.classList.contains("page-header--closed")) {
+    header.classList.remove("page-header--closed");
+    header.classList.add("page-header--opened");
+  } else {
+    header.classList.remove("page-header--opened");
+    header.classList.add("page-header--closed");
+  }
+});
+
+// Slider
+
 const buttonNext = document.querySelector(".promotion__button--next");
 const buttonPrevious = document.querySelector(".promotion__button--previous");
 const slides = Array.from(document.querySelectorAll(".slider__item"));
