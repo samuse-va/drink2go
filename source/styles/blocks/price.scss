@@ -73,6 +73,17 @@
 .price-controls {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 2px;
+    left: calc(50% - 4px);
+    background-color: $base-grey;
+  }
 }
 
 .price-controls label {

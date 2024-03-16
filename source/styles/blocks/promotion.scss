@@ -56,21 +56,17 @@
   background-color: unset;
   cursor: pointer;
 
-  &::before {
-    content: "";
-    position: absolute;
+  svg {
+    fill: $base-primary;
     width: 11px;
     height: 20px;
-    top: 50%;
-    left: calc(50% - 5px);
-    background-image: url("../../images/icons/arrow.svg");
   }
 
-  //   &:disabled {
-  //     &::before {
-  //       fill: $base-grey; // arrow!
-  //     }
-  //   }
+  &:disabled {
+    svg {
+      fill: $base-grey;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     height: 71%;
@@ -80,7 +76,8 @@
   }
 }
 .promotion__button--previous {
-  &:hover {
+  &:hover,
+  &:focus {
     background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
   }
   &:active {
@@ -92,10 +89,8 @@
   }
 }
 .promotion__button--next {
-  &::before {
-    transform: rotate(180deg);
-  }
-  &:hover {
+  &:hover,
+  &:focus {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);
   }
   &:active {
@@ -147,7 +142,7 @@
   background-color: $base-white;
   cursor: pointer;
 
-  &:hover,
+  &:hover, // focus?
   &:active {
     background-color: $alt-primary-opacity;
   }
