@@ -12,35 +12,71 @@
     justify-content: right;
   }
 }
-.pagination__item-number,
-.pagination__item--next,
-.pagination__item--previous {
-  padding: 10px 17px;
+// .pagination__item {
+//   margin-right: 20px;
+
+//   &:last-child {
+//     margin-right: 0;
+//   }
+// }
+.pagination__item-button {
+  display: inline-flex;
+  justify-content: center;
+  padding: 8px;
+  min-width: 24px;
+  height: 24px;
   color: $base-primary;
   background-color: $base-white;
   border-radius: 4px;
   cursor: pointer;
 
+  span {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: inline-flex;
+    }
+  }
+  svg {
+    fill: $base-primary;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+
   &:hover,
   &:focus {
     color: $base-white;
     background-color: $alt-primary-lighter;
+
+    svg {
+      fill: $base-white;
+    }
   }
   &:active {
     color: $base-white;
     background-color: $alt-primary-darker;
-  }
-  &:disabled {
-    color: $base-white;
-    background-color: $alt-light-grey;
+
+    svg {
+      fill: $base-white;
+    }
   }
 }
-.pagination__item--current {
-  padding: 10px 17px;
+.pagination__item-button--current {
   font-family: "Montserratsemibold", "Arial", sans-serif;
   color: $base-black;
+  background-color: unset;
   border-radius: 4px;
   cursor: pointer;
+}
+.pagination__item-button--disabled {
+  color: $base-white;
+  background-color: $alt-light-grey;
+
+  svg {
+    fill: $base-white;
+  }
 }
 // .pagination__item--previous {
 //   position: relative;
@@ -55,9 +91,9 @@
 //     top: 8px;
 //     left: 15px;
 
-    // &:hover {
-    //   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='10' viewBox='0 0 6 10' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.80847 -5.20835e-08L6 1.23899L2.38306 5L6 8.76101L4.80847 10L-2.18557e-07 5L4.80847 -5.20835e-08Z' fill='#ffffff'/%3E%3C/svg%3E");
-    // }
+// &:hover {
+//   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='6' height='10' viewBox='0 0 6 10' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.80847 -5.20835e-08L6 1.23899L2.38306 5L6 8.76101L4.80847 10L-2.18557e-07 5L4.80847 -5.20835e-08Z' fill='#ffffff'/%3E%3C/svg%3E");
+// }
 
 //     @media (min-width: $tablet-width) {
 //       content: "Назад";
@@ -72,28 +108,13 @@
 //     padding: 20px 46px;
 //   }
 // }
-.pagination__item--next {
-  position: relative;
-  display: flex;
-
-  &:before {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: 15px;
-    left: 15px;
-
-    @media (min-width: $tablet-width) {
-      content: "Вперёд";
-      width: unset;
-      height: unset;
-      top: calc(50% - 12px);
-      left: calc(50% - 32px);
-    }
-  }
+// .pagination__item-button--previous {
+// }
+.pagination__item-button--previous,
+.pagination__item-button--next {
+  align-items: center;
 
   @media (min-width: $tablet-width) {
-    padding: 20px 52px;
+    padding: 8px 20px;
   }
 }

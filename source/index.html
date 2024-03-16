@@ -14,7 +14,7 @@
   </head>
 
   <body class="page page__body">
-    <header class="page-header page-header--nojs">
+    <header class="page-header page-header--nojs wrapper">
       <a class="page-header__logo">
         <picture>
           <source
@@ -101,283 +101,285 @@
         Интернет-магазин кофейных напитков
       </h1>
       <section class="promotion promotion--1">
-        <h2 class="visually-hidden">Акции</h2>
-        <div class="promotion__actions">
-          <button
-            type="button"
-            class="promotion__button promotion__button--previous"
-            aria-label="Предыдущий слайд"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="11"
-              height="20"
-              viewBox="0 0 11 20"
-              fill="none"
+        <div class="wrapper">
+          <h2 class="visually-hidden">Акции</h2>
+          <div class="promotion__actions">
+            <button
+              type="button"
+              class="promotion__button promotion__button--previous"
+              aria-label="Предыдущий слайд"
             >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z"
-              />
-            </svg>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="20"
+                viewBox="0 0 11 20"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M9.71661 0L11 1.32082L2.56677 10L11 18.6792L9.71661 20L0 10L9.71661 0Z"
+                />
+              </svg>
+            </button>
 
-          <div class="promotion__slider-wrapper">
-            <ul class="promotion__slider slider">
-              <li class="slider__item slider__item--current">
-                <div class="slider__item-text-wrapper">
-                  <h3 class="slider__item-title">Декаф Флэт Уайт</h3>
-                  <span class="slider__item-badge badge">Новинка!</span>
-                  <p class="slider__item-description">
-                    Свежесваренный кофе без кофеина из Эфиопии с натуральным
-                    фермерским молоком — то, что нужно для расслабления после
-                    тяжёлого рабочего дня
-                  </p>
+            <div class="promotion__slider-wrapper">
+              <ul class="promotion__slider slider">
+                <li class="slider__item slider__item--current">
+                  <div class="slider__item-text-wrapper">
+                    <h3 class="slider__item-title">Декаф Флэт Уайт</h3>
+                    <span class="slider__item-badge badge">Новинка!</span>
+                    <p class="slider__item-description">
+                      Свежесваренный кофе без кофеина из Эфиопии с натуральным
+                      фермерским молоком — то, что нужно для расслабления после
+                      тяжёлого рабочего дня
+                    </p>
 
-                  <div class="slider__item-order-info">
-                    <div class="slider__item-price-info">
-                      <span class="slider__item-price--old">295₽</span>
-                      <span class="slider__item-price">225₽</span>
+                    <div class="slider__item-order-info">
+                      <div class="slider__item-price-info">
+                        <span class="slider__item-price--old">295₽</span>
+                        <span class="slider__item-price">225₽</span>
+                      </div>
+                      <button
+                        class="slider-item__button button button--add"
+                        type="button"
+                      >
+                        Заказать
+                      </button>
                     </div>
-                    <button
-                      class="slider-item__button button button--add"
-                      type="button"
-                    >
-                      Заказать
-                    </button>
                   </div>
-                </div>
-                <picture class="slider__item-picture">
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1440px)"
-                    srcset="
-                      ./images/slider/1-desktop@1x.webp 1x,
-                      ./images/slider/1-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./images/slider/1-tablet@1x.webp 1x,
-                      ./images/slider/1-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      ./images/slider/1-mobile@1x.webp 1x,
-                      ./images/slider/1-mobile@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1440px)"
-                    srcset="
-                      ./images/slider/1-desktop@1x.png 1x,
-                      ./images/slider/1-desktop@2x.png 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./images/slider/1-tablet@1x.png 1x,
-                      ./images/slider/1-tablet@2x.png 2x
-                    "
-                  />
-                  <img
-                    src="./images/slider/1-mobile@1x.png"
-                    class="slider__item-image"
-                    srcset="./images/slider/1-mobile@2x.png 2x"
-                    width="280"
-                    height="280"
-                    alt="Жестяная банка"
-                  />
-                </picture>
-              </li>
-              <li class="slider__item">
-                <div class="slider__item-text-wrapper">
-                  <h3 class="slider__item-title">Лавандовый Латте</h3>
-                  <span class="slider__item-badge badge">Новинка!</span>
-                  <p class="slider__item-description">
-                    Невероятное сочетание перуанской высокогорной арабики с
-                    молоком ламы и лавандовым сиропом унесёт вас прямо на
-                    вершину Радужных гор
-                  </p>
+                  <picture class="slider__item-picture">
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./images/slider/1-desktop@1x.webp 1x,
+                        ./images/slider/1-desktop@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/slider/1-tablet@1x.webp 1x,
+                        ./images/slider/1-tablet@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./images/slider/1-mobile@1x.webp 1x,
+                        ./images/slider/1-mobile@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./images/slider/1-desktop@1x.png 1x,
+                        ./images/slider/1-desktop@2x.png 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/slider/1-tablet@1x.png 1x,
+                        ./images/slider/1-tablet@2x.png 2x
+                      "
+                    />
+                    <img
+                      src="./images/slider/1-mobile@1x.png"
+                      class="slider__item-image"
+                      srcset="./images/slider/1-mobile@2x.png 2x"
+                      width="280"
+                      height="280"
+                      alt="Жестяная банка"
+                    />
+                  </picture>
+                </li>
+                <li class="slider__item">
+                  <div class="slider__item-text-wrapper">
+                    <h3 class="slider__item-title">Лавандовый Латте</h3>
+                    <span class="slider__item-badge badge">Новинка!</span>
+                    <p class="slider__item-description">
+                      Невероятное сочетание перуанской высокогорной арабики с
+                      молоком ламы и лавандовым сиропом унесёт вас прямо на
+                      вершину Радужных гор
+                    </p>
 
-                  <div class="slider__item-order-info">
-                    <div class="slider__item-price-info">
-                      <span class="slider__item-price--old">285₽</span>
-                      <span class="slider__item-price">265₽</span>
+                    <div class="slider__item-order-info">
+                      <div class="slider__item-price-info">
+                        <span class="slider__item-price--old">285₽</span>
+                        <span class="slider__item-price">265₽</span>
+                      </div>
+                      <button class="button button--add" type="button">
+                        Заказать
+                      </button>
                     </div>
-                    <button class="button button--add" type="button">
-                      Заказать
-                    </button>
                   </div>
-                </div>
-                <picture class="slider__item-picture">
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1440px)"
-                    srcset="
-                      ./images/slider/2-desktop@1x.webp 1x,
-                      ./images/slider/2-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./images/slider/2-tablet@1x.webp 1x,
-                      ./images/slider/2-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      ./images/slider/2-mobile@1x.webp 1x,
-                      ./images/slider/2-mobile@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1440px)"
-                    srcset="
-                      ./images/slider/2-desktop@1x.png 1x,
-                      ./images/slider/2-desktop@2x.png 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./images/slider/2-tablet@1x.png 1x,
-                      ./images/slider/2-tablet@2x.png 2x
-                    "
-                  />
-                  <img
-                    src="./images/slider/2-mobile@1x.png"
-                    class="slider__item-image"
-                    srcset="./images/slider/2-mobile@2x.png 2x"
-                    width="280"
-                    height="280"
-                    alt="Жестяная банка"
-                  />
-                </picture>
-              </li>
-              <li class="slider__item">
-                <div class="slider__item-text-wrapper">
-                  <h3 class="slider__item-title">Тройной Эспрессо</h3>
-                  <span class="slider__item-badge badge">Новинка!</span>
-                  <p class="slider__item-description">
-                    Мощнее укола адреналина, чернее самой тёмной ночи, этот
-                    тройной эспрессо из Колумбии покажет вам, что такое
-                    настоящая бодрость
-                  </p>
+                  <picture class="slider__item-picture">
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./images/slider/2-desktop@1x.webp 1x,
+                        ./images/slider/2-desktop@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/slider/2-tablet@1x.webp 1x,
+                        ./images/slider/2-tablet@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./images/slider/2-mobile@1x.webp 1x,
+                        ./images/slider/2-mobile@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./images/slider/2-desktop@1x.png 1x,
+                        ./images/slider/2-desktop@2x.png 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/slider/2-tablet@1x.png 1x,
+                        ./images/slider/2-tablet@2x.png 2x
+                      "
+                    />
+                    <img
+                      src="./images/slider/2-mobile@1x.png"
+                      class="slider__item-image"
+                      srcset="./images/slider/2-mobile@2x.png 2x"
+                      width="280"
+                      height="280"
+                      alt="Жестяная банка"
+                    />
+                  </picture>
+                </li>
+                <li class="slider__item">
+                  <div class="slider__item-text-wrapper">
+                    <h3 class="slider__item-title">Тройной Эспрессо</h3>
+                    <span class="slider__item-badge badge">Новинка!</span>
+                    <p class="slider__item-description">
+                      Мощнее укола адреналина, чернее самой тёмной ночи, этот
+                      тройной эспрессо из Колумбии покажет вам, что такое
+                      настоящая бодрость
+                    </p>
 
-                  <div class="slider__item-order-info">
-                    <div class="slider__item-price-info">
-                      <span class="slider__item-price--old">395₽</span>
-                      <span class="slider__item-price">375₽</span>
+                    <div class="slider__item-order-info">
+                      <div class="slider__item-price-info">
+                        <span class="slider__item-price--old">395₽</span>
+                        <span class="slider__item-price">375₽</span>
+                      </div>
+                      <button
+                        class="slider-item__button button button--add"
+                        type="button"
+                      >
+                        Заказать
+                      </button>
                     </div>
-                    <button
-                      class="slider-item__button button button--add"
-                      type="button"
-                    >
-                      Заказать
-                    </button>
                   </div>
-                </div>
-                <picture class="slider__item-picture">
-                  <source
-                    type="image/webp"
-                    media="(min-width: 1440px)"
-                    srcset="
-                      ./images/slider/3-desktop@1x.webp 1x,
-                      ./images/slider/3-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./images/slider/3-tablet@1x.webp 1x,
-                      ./images/slider/3-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      ./images/slider/3-mobile@1x.webp 1x,
-                      ./images/slider/3-mobile@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1440px)"
-                    srcset="
-                      ./images/slider/3-desktop@1x.png 1x,
-                      ./images/slider/3-desktop@2x.png 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./images/slider/3-tablet@1x.png 1x,
-                      ./images/slider/3-tablet@2x.png 2x
-                    "
-                  />
-                  <img
-                    src="./images/slider/3-mobile@1x.png"
-                    class="slider__item-image"
-                    srcset="./images/slider/3-mobile@2x.png 2x"
-                    width="280"
-                    height="280"
-                    alt="Жестяная банка"
-                  />
-                </picture>
-              </li>
-            </ul>
-            <div class="promotion__slider-controls">
-              <button
-                type="button"
-                class="promotion__slider-button promotion__slider-button--current"
-                aria-label="Первый слайд"
-              ></button>
-              <button
-                type="button"
-                class="promotion__slider-button"
-                aria-label="Второй слайд"
-              ></button>
-              <button
-                type="button"
-                class="promotion__slider-button"
-                aria-label="Третий слайд"
-              ></button>
+                  <picture class="slider__item-picture">
+                    <source
+                      type="image/webp"
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./images/slider/3-desktop@1x.webp 1x,
+                        ./images/slider/3-desktop@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/slider/3-tablet@1x.webp 1x,
+                        ./images/slider/3-tablet@2x.webp 2x
+                      "
+                    />
+                    <source
+                      type="image/webp"
+                      srcset="
+                        ./images/slider/3-mobile@1x.webp 1x,
+                        ./images/slider/3-mobile@2x.webp 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./images/slider/3-desktop@1x.png 1x,
+                        ./images/slider/3-desktop@2x.png 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/slider/3-tablet@1x.png 1x,
+                        ./images/slider/3-tablet@2x.png 2x
+                      "
+                    />
+                    <img
+                      src="./images/slider/3-mobile@1x.png"
+                      class="slider__item-image"
+                      srcset="./images/slider/3-mobile@2x.png 2x"
+                      width="280"
+                      height="280"
+                      alt="Жестяная банка"
+                    />
+                  </picture>
+                </li>
+              </ul>
+              <div class="promotion__slider-controls">
+                <button
+                  type="button"
+                  class="promotion__slider-button promotion__slider-button--current"
+                  aria-label="Первый слайд"
+                ></button>
+                <button
+                  type="button"
+                  class="promotion__slider-button"
+                  aria-label="Второй слайд"
+                ></button>
+                <button
+                  type="button"
+                  class="promotion__slider-button"
+                  aria-label="Третий слайд"
+                ></button>
+              </div>
             </div>
-          </div>
 
-          <button
-            type="button"
-            class="promotion__button promotion__button--next"
-            aria-label="Следующий слайд"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="11"
-              height="20"
-              viewBox="0 0 11 20"
-              fill="none"
+            <button
+              type="button"
+              class="promotion__button promotion__button--next"
+              aria-label="Следующий слайд"
             >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M1.28339 0L0 1.32082L8.43323 10L0 18.6792L1.28339 20L11 10L1.28339 0Z"
-              />
-            </svg>
-          </button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="11"
+                height="20"
+                viewBox="0 0 11 20"
+                fill="none"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M1.28339 0L0 1.32082L8.43323 10L0 18.6792L1.28339 20L11 10L1.28339 0Z"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
 
-      <section class="features">
+      <section class="features wrapper">
         <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
         <span class="features__badge badge">Преимущества</span>
         <ul class="features__list">
@@ -437,448 +439,467 @@
       </section>
 
       <section class="catalog">
-        <h2 class="catalog__title">Каталог кофейных напитков</h2>
-        <span class="catalog__badge badge">Каталог</span>
-        <div class="catalog__wrapper">
-          <form
-            class="catalog__filters"
-            method="get"
-            action="https://echo.htmlacademy.ru"
-          >
-            <div class="catalog__filter-wrapper">
-              <fieldset class="catalog__fieldset filter price">
-                <legend class="filter__field">Цена</legend>
-                <div class="price-control">
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
+        <div class="wrapper">
+          <h2 class="catalog__title">Каталог кофейных напитков</h2>
+          <span class="catalog__badge badge">Каталог</span>
+          <div class="catalog__wrapper">
+            <form
+              class="catalog__filters"
+              method="get"
+              action="https://echo.htmlacademy.ru"
+            >
+              <div class="catalog__filter-wrapper">
+                <fieldset class="catalog__fieldset filter price">
+                  <legend class="filter__field">Цена</legend>
+                  <div class="price-control">
+                    <div class="range-controls">
+                      <div class="scale"></div>
+                      <div class="toggle toggle-min" tabindex="0"></div>
+                      <div class="toggle toggle-max" tabindex="0"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0"></div>
-                    <div class="toggle toggle-max" tabindex="0"></div>
+                    <div class="price-controls">
+                      <label class="min-price">
+                        <input type="number" name="min-price" placeholder="0" />
+                      </label>
+                      <label class="max-price">
+                        <input type="number" name="max-price" value="123" />
+                      </label>
+                    </div>
                   </div>
-                  <div class="price-controls">
-                    <label class="min-price">
-                      <input type="number" name="min-price" placeholder="0" />
-                    </label>
-                    <label class="max-price">
-                      <input type="number" name="max-price" value="123" />
-                    </label>
-                  </div>
-                </div>
-              </fieldset>
+                </fieldset>
 
-              <fieldset class="catalog__fieldset filter milk">
-                <legend class="filter__field">Наличие молока</legend>
-                <ul class="filter__options-list">
-                  <li class="filter__option-radio">
-                    <input
-                      type="radio"
-                      class="filter__input-radio visually-hidden"
-                      name="milk"
-                      value="no-matter"
-                      id="filter-no-matter"
-                      checked
-                    />
-                    <label for="filter-no-matter" class="filter__option-label"
-                      >Неважно</label
-                    >
-                  </li>
-                  <li class="filter__option-radio">
-                    <input
-                      type="radio"
-                      class="filter__input-radio visually-hidden"
-                      name="milk"
-                      value="animal"
-                      id="filter-animal"
-                    />
-                    <label for="filter-animal" class="filter__option-label"
-                      >Только животное</label
-                    >
-                  </li>
-                  <li class="filter__option-radio">
-                    <input
-                      type="radio"
-                      class="filter__input-radio visually-hidden"
-                      name="milk"
-                      value="plant"
-                      id="filter-plant"
-                    />
-                    <label for="filter-plant" class="filter__option-label"
-                      >Только растительное</label
-                    >
-                  </li>
-                  <li class="filter__option-radio">
-                    <input
-                      type="radio"
-                      class="filter__input-radio visually-hidden"
-                      name="milk"
-                      value="no-milk"
-                      id="filter-no-milk"
-                      disabled
-                    />
-                    <label for="filter-no-milk" class="filter__option-label"
-                      >Без молока</label
-                    >
-                  </li>
-                </ul>
-              </fieldset>
+                <fieldset class="catalog__fieldset filter milk">
+                  <legend class="filter__field">Наличие молока</legend>
+                  <ul class="filter__options-list">
+                    <li class="filter__option-radio">
+                      <input
+                        type="radio"
+                        class="filter__input-radio visually-hidden"
+                        name="milk"
+                        value="no-matter"
+                        id="filter-no-matter"
+                        checked
+                      />
+                      <label for="filter-no-matter" class="filter__option-label"
+                        >Неважно</label
+                      >
+                    </li>
+                    <li class="filter__option-radio">
+                      <input
+                        type="radio"
+                        class="filter__input-radio visually-hidden"
+                        name="milk"
+                        value="animal"
+                        id="filter-animal"
+                      />
+                      <label for="filter-animal" class="filter__option-label"
+                        >Только животное</label
+                      >
+                    </li>
+                    <li class="filter__option-radio">
+                      <input
+                        type="radio"
+                        class="filter__input-radio visually-hidden"
+                        name="milk"
+                        value="plant"
+                        id="filter-plant"
+                      />
+                      <label for="filter-plant" class="filter__option-label"
+                        >Только растительное</label
+                      >
+                    </li>
+                    <li class="filter__option-radio">
+                      <input
+                        type="radio"
+                        class="filter__input-radio visually-hidden"
+                        name="milk"
+                        value="no-milk"
+                        id="filter-no-milk"
+                        disabled
+                      />
+                      <label for="filter-no-milk" class="filter__option-label"
+                        >Без молока</label
+                      >
+                    </li>
+                  </ul>
+                </fieldset>
 
-              <fieldset class="catalog__fieldset filter country">
-                <legend class="filter__field">Страна произрастания</legend>
-                <ul class="filter__options-list">
-                  <li class="filter__option-checkbox">
-                    <input
-                      type="checkbox"
-                      class="filter__input-checkbox visually-hidden"
-                      name="brazil"
-                      id="filter-brazil"
-                      checked
-                    />
-                    <label for="filter-brazil" class="filter__option-label"
-                      >Бразилия</label
-                    >
-                  </li>
+                <fieldset class="catalog__fieldset filter country">
+                  <legend class="filter__field">Страна произрастания</legend>
+                  <ul class="filter__options-list">
+                    <li class="filter__option-checkbox">
+                      <input
+                        type="checkbox"
+                        class="filter__input-checkbox visually-hidden"
+                        name="brazil"
+                        id="filter-brazil"
+                        checked
+                      />
+                      <label for="filter-brazil" class="filter__option-label"
+                        >Бразилия</label
+                      >
+                    </li>
 
-                  <li class="filter__option-checkbox">
-                    <input
-                      type="checkbox"
-                      class="filter__input-checkbox visually-hidden"
-                      name="ethiopia"
-                      id="filter-ethiopia"
-                      class="visually-hidden"
-                    />
-                    <label for="filter-ethiopia" class="filter__option-label"
-                      >Эфиопия</label
-                    >
-                  </li>
+                    <li class="filter__option-checkbox">
+                      <input
+                        type="checkbox"
+                        class="filter__input-checkbox visually-hidden"
+                        name="ethiopia"
+                        id="filter-ethiopia"
+                        class="visually-hidden"
+                      />
+                      <label for="filter-ethiopia" class="filter__option-label"
+                        >Эфиопия</label
+                      >
+                    </li>
 
-                  <li class="filter__option-checkbox">
-                    <input
-                      type="checkbox"
-                      class="filter__input-checkbox visually-hidden"
-                      name="colombia"
-                      id="filter-colombia"
-                      checked
-                    />
-                    <label for="filter-colombia" class="filter__option-label"
-                      >Колумбия</label
-                    >
-                  </li>
+                    <li class="filter__option-checkbox">
+                      <input
+                        type="checkbox"
+                        class="filter__input-checkbox visually-hidden"
+                        name="colombia"
+                        id="filter-colombia"
+                        checked
+                      />
+                      <label for="filter-colombia" class="filter__option-label"
+                        >Колумбия</label
+                      >
+                    </li>
 
-                  <li class="filter__option-checkbox">
-                    <input
-                      type="checkbox"
-                      class="filter__input-checkbox visually-hidden"
-                      name="costa-rica"
-                      id="filter-costa-rica"
-                    />
-                    <label for="filter-costa-rica" class="filter__option-label"
-                      >Коста-Рика</label
-                    >
-                  </li>
+                    <li class="filter__option-checkbox">
+                      <input
+                        type="checkbox"
+                        class="filter__input-checkbox visually-hidden"
+                        name="costa-rica"
+                        id="filter-costa-rica"
+                      />
+                      <label
+                        for="filter-costa-rica"
+                        class="filter__option-label"
+                        >Коста-Рика</label
+                      >
+                    </li>
 
-                  <li class="filter__option-checkbox">
-                    <input
-                      type="checkbox"
-                      class="filter__input-checkbox visually-hidden"
-                      name="peru"
-                      id="filter-peru"
-                      disabled
-                    />
-                    <label for="filter-peru" class="filter__option-label"
-                      >Перу</label
-                    >
-                  </li>
-                </ul>
-              </fieldset>
-            </div>
+                    <li class="filter__option-checkbox">
+                      <input
+                        type="checkbox"
+                        class="filter__input-checkbox visually-hidden"
+                        name="peru"
+                        id="filter-peru"
+                        disabled
+                      />
+                      <label for="filter-peru" class="filter__option-label"
+                        >Перу</label
+                      >
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
 
-            <div class="catalog__filters-buttons-wrapper">
-              <button
-                type="submit"
-                class="catalog__filters-button button button--add"
-              >
-                Применить
-              </button>
-              <button
-                type="button"
-                class="catalog__filters-button button button--unset"
-              >
-                Сбросить
-              </button>
-            </div>
-          </form>
-
-          <div class="products-list__wrapper">
-            <div class="sorting">
-              <p class="sorting__title">Сортировка:</p>
-              <select class="sorting__select">
-                <option class="sorting__select-item" value="default" selected>
-                  по умолчанию
-                </option>
-                <option class="sorting__select-item" value="expensive">
-                  сначала дорогие
-                </option>
-                <option class="sorting__select-item" value="cheap">
-                  сначала дешёвые
-                </option>
-                <option class="sorting__select-item" value="rating">
-                  высокий рейтинг
-                </option>
-              </select>
-            </div>
-
-            <ul class="products-list">
-              <li class="products-list__item">
-                <a href="#" class="products-list__item-title-link">
-                  <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
-                </a>
-                <p class="products-list__item-description">
-                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-                </p>
-                <div class="products-list__item-order">
-                  <span class="products-list__item-price">225₽</span>
-                  <button class="products-list__item-button button--add">
-                    В корзину
-                  </button>
-                </div>
-                <a href="#" class="products-list__item-picture-link">
-                  <picture class="products-list__item-picture">
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ./images/catalog/1@1x.webp 1x,
-                        ./images/catalog/1@2x.webp 2x
-                      "
-                    />
-                    <img
-                      src="./images/catalog/1@1x.png"
-                      class="products-list__item-image"
-                      srcset="./images/catalog/1@2x.png 2x"
-                      width="130"
-                      height="188"
-                      alt="Жестяная банка"
-                    />
-                  </picture>
-                </a>
-              </li>
-              <li class="products-list__item">
-                <a href="#" class="products-list__item-title-link">
-                  <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
-                </a>
-                <p class="products-list__item-description">
-                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-                </p>
-                <div class="products-list__item-order">
-                  <span class="products-list__item-price">225₽</span>
-                  <button class="products-list__item-button button--add">
-                    В корзину
-                  </button>
-                </div>
-                <a href="#" class="products-list__item-picture-link">
-                  <picture class="products-list__item-picture">
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ./images/catalog/2@1x.webp 1x,
-                        ./images/catalog/2@2x.webp 2x
-                      "
-                    />
-                    <img
-                      src="./images/catalog/2@1x.png"
-                      class="products-list__item-image"
-                      srcset="./images/catalog/2@2x.png 2x"
-                      width="130"
-                      height="188"
-                      alt="Жестяная банка"
-                    />
-                  </picture>
-                </a>
-              </li>
-              <li class="products-list__item">
-                <a href="#" class="products-list__item-title-link">
-                  <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
-                </a>
-                <p class="products-list__item-description">
-                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-                </p>
-                <div class="products-list__item-order">
-                  <span class="products-list__item-price">225₽</span>
-                  <button class="products-list__item-button button--add">
-                    В корзину
-                  </button>
-                </div>
-                <a href="#" class="products-list__item-picture-link">
-                  <picture class="products-list__item-picture">
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ./images/catalog/3@1x.webp 1x,
-                        ./images/catalog/3@2x.webp 2x
-                      "
-                    />
-                    <img
-                      src="./images/catalog/3@1x.png"
-                      class="products-list__item-image"
-                      srcset="./images/catalog/3@2x.png 2x"
-                      width="130"
-                      height="188"
-                      alt="Жестяная банка"
-                    />
-                  </picture>
-                </a>
-              </li>
-              <li class="products-list__item">
-                <a href="#" class="products-list__item-title-link">
-                  <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
-                </a>
-                <p class="products-list__item-description">
-                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-                </p>
-                <div class="products-list__item-order">
-                  <span class="products-list__item-price">225₽</span>
-                  <button class="products-list__item-button button--add">
-                    В корзину
-                  </button>
-                </div>
-                <a href="#" class="products-list__item-picture-link">
-                  <picture class="products-list__item-picture">
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ./images/catalog/4@1x.webp 1x,
-                        ./images/catalog/4@2x.webp 2x
-                      "
-                    />
-                    <img
-                      src="./images/catalog/4@1x.png"
-                      class="products-list__item-image"
-                      srcset="./images/catalog/4@2x.png 2x"
-                      width="130"
-                      height="188"
-                      alt="Жестяная банка"
-                    />
-                  </picture>
-                </a>
-              </li>
-              <li class="products-list__item">
-                <a href="#" class="products-list__item-title-link">
-                  <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
-                </a>
-                <p class="products-list__item-description">
-                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-                </p>
-                <div class="products-list__item-order">
-                  <span class="products-list__item-price">225₽</span>
-                  <button class="products-list__item-button button--add">
-                    В корзину
-                  </button>
-                </div>
-                <a href="#" class="products-list__item-picture-link">
-                  <picture class="products-list__item-picture">
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ./images/catalog/5@1x.webp 1x,
-                        ./images/catalog/5@2x.webp 2x
-                      "
-                    />
-                    <img
-                      src="./images/catalog/5@1x.png"
-                      class="products-list__item-image"
-                      srcset="./images/catalog/5@2x.png 2x"
-                      width="130"
-                      height="188"
-                      alt="Жестяная банка"
-                    />
-                  </picture>
-                </a>
-              </li>
-              <li class="products-list__item">
-                <a href="#" class="products-list__item-title-link">
-                  <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
-                </a>
-                <p class="products-list__item-description">
-                  Кофе без кофеина из Эфиопии с натуральным фермерским молоком
-                </p>
-                <div class="products-list__item-order">
-                  <span class="products-list__item-price">225₽</span>
-                  <button class="products-list__item-button button--add">
-                    В корзину
-                  </button>
-                </div>
-                <a href="#" class="products-list__item-picture-link">
-                  <picture class="products-list__item-picture">
-                    <source
-                      type="image/webp"
-                      srcset="
-                        ./images/catalog/6@1x.webp 1x,
-                        ./images/catalog/6@2x.webp 2x
-                      "
-                    />
-                    <img
-                      src="./images/catalog/6@1x.png"
-                      class="products-list__item-image"
-                      srcset="./images/catalog/6@2x.png 2x"
-                      width="130"
-                      height="188"
-                      alt="Жестяная банка"
-                    />
-                  </picture>
-                </a>
-              </li>
-            </ul>
-            <ul class="pagination">
-              <li class="pagination__item">
-                <a
-                  href="#"
-                  class="pagination__item--previous"
-                  aria-label="Предыдущая страница"
+              <div class="catalog__filters-buttons-wrapper">
+                <button
+                  type="submit"
+                  class="catalog__filters-button button button--add"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="6"
-                    height="10"
-                    viewBox="0 0 6 10"
-                    fill="none"
+                  Применить
+                </button>
+                <button
+                  type="button"
+                  class="catalog__filters-button button button--unset"
+                >
+                  Сбросить
+                </button>
+              </div>
+            </form>
+
+            <div class="products-list__wrapper">
+              <div class="sorting">
+                <p class="sorting__title">Сортировка:</p>
+                <select class="sorting__select">
+                  <option class="sorting__select-item" value="default" selected>
+                    по умолчанию
+                  </option>
+                  <option class="sorting__select-item" value="expensive">
+                    сначала дорогие
+                  </option>
+                  <option class="sorting__select-item" value="cheap">
+                    сначала дешёвые
+                  </option>
+                  <option class="sorting__select-item" value="rating">
+                    высокий рейтинг
+                  </option>
+                </select>
+              </div>
+
+              <ul class="products-list">
+                <li class="products-list__item">
+                  <a href="#" class="products-list__item-title-link">
+                    <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
+                  </a>
+                  <p class="products-list__item-description">
+                    Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                  </p>
+                  <div class="products-list__item-order">
+                    <span class="products-list__item-price">225₽</span>
+                    <button class="products-list__item-button button--add">
+                      В корзину
+                    </button>
+                  </div>
+                  <a href="#" class="products-list__item-picture-link">
+                    <picture class="products-list__item-picture">
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/catalog/1@1x.webp 1x,
+                          ./images/catalog/1@2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./images/catalog/1@1x.png"
+                        class="products-list__item-image"
+                        srcset="./images/catalog/1@2x.png 2x"
+                        width="130"
+                        height="188"
+                        alt="Жестяная банка"
+                      />
+                    </picture>
+                  </a>
+                </li>
+                <li class="products-list__item">
+                  <a href="#" class="products-list__item-title-link">
+                    <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
+                  </a>
+                  <p class="products-list__item-description">
+                    Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                  </p>
+                  <div class="products-list__item-order">
+                    <span class="products-list__item-price">225₽</span>
+                    <button class="products-list__item-button button--add">
+                      В корзину
+                    </button>
+                  </div>
+                  <a href="#" class="products-list__item-picture-link">
+                    <picture class="products-list__item-picture">
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/catalog/2@1x.webp 1x,
+                          ./images/catalog/2@2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./images/catalog/2@1x.png"
+                        class="products-list__item-image"
+                        srcset="./images/catalog/2@2x.png 2x"
+                        width="130"
+                        height="188"
+                        alt="Жестяная банка"
+                      />
+                    </picture>
+                  </a>
+                </li>
+                <li class="products-list__item">
+                  <a href="#" class="products-list__item-title-link">
+                    <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
+                  </a>
+                  <p class="products-list__item-description">
+                    Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                  </p>
+                  <div class="products-list__item-order">
+                    <span class="products-list__item-price">225₽</span>
+                    <button class="products-list__item-button button--add">
+                      В корзину
+                    </button>
+                  </div>
+                  <a href="#" class="products-list__item-picture-link">
+                    <picture class="products-list__item-picture">
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/catalog/3@1x.webp 1x,
+                          ./images/catalog/3@2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./images/catalog/3@1x.png"
+                        class="products-list__item-image"
+                        srcset="./images/catalog/3@2x.png 2x"
+                        width="130"
+                        height="188"
+                        alt="Жестяная банка"
+                      />
+                    </picture>
+                  </a>
+                </li>
+                <li class="products-list__item">
+                  <a href="#" class="products-list__item-title-link">
+                    <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
+                  </a>
+                  <p class="products-list__item-description">
+                    Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                  </p>
+                  <div class="products-list__item-order">
+                    <span class="products-list__item-price">225₽</span>
+                    <button class="products-list__item-button button--add">
+                      В корзину
+                    </button>
+                  </div>
+                  <a href="#" class="products-list__item-picture-link">
+                    <picture class="products-list__item-picture">
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/catalog/4@1x.webp 1x,
+                          ./images/catalog/4@2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./images/catalog/4@1x.png"
+                        class="products-list__item-image"
+                        srcset="./images/catalog/4@2x.png 2x"
+                        width="130"
+                        height="188"
+                        alt="Жестяная банка"
+                      />
+                    </picture>
+                  </a>
+                </li>
+                <li class="products-list__item">
+                  <a href="#" class="products-list__item-title-link">
+                    <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
+                  </a>
+                  <p class="products-list__item-description">
+                    Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                  </p>
+                  <div class="products-list__item-order">
+                    <span class="products-list__item-price">225₽</span>
+                    <button class="products-list__item-button button--add">
+                      В корзину
+                    </button>
+                  </div>
+                  <a href="#" class="products-list__item-picture-link">
+                    <picture class="products-list__item-picture">
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/catalog/5@1x.webp 1x,
+                          ./images/catalog/5@2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./images/catalog/5@1x.png"
+                        class="products-list__item-image"
+                        srcset="./images/catalog/5@2x.png 2x"
+                        width="130"
+                        height="188"
+                        alt="Жестяная банка"
+                      />
+                    </picture>
+                  </a>
+                </li>
+                <li class="products-list__item">
+                  <a href="#" class="products-list__item-title-link">
+                    <h3 class="products-list__item-title">Декаф Флэт Уайт</h3>
+                  </a>
+                  <p class="products-list__item-description">
+                    Кофе без кофеина из Эфиопии с натуральным фермерским молоком
+                  </p>
+                  <div class="products-list__item-order">
+                    <span class="products-list__item-price">225₽</span>
+                    <button class="products-list__item-button button--add">
+                      В корзину
+                    </button>
+                  </div>
+                  <a href="#" class="products-list__item-picture-link">
+                    <picture class="products-list__item-picture">
+                      <source
+                        type="image/webp"
+                        srcset="
+                          ./images/catalog/6@1x.webp 1x,
+                          ./images/catalog/6@2x.webp 2x
+                        "
+                      />
+                      <img
+                        src="./images/catalog/6@1x.png"
+                        class="products-list__item-image"
+                        srcset="./images/catalog/6@2x.png 2x"
+                        width="130"
+                        height="188"
+                        alt="Жестяная банка"
+                      />
+                    </picture>
+                  </a>
+                </li>
+              </ul>
+              <ul class="pagination">
+                <li class="pagination__item">
+                  <a
+                    href="#"
+                    class="pagination__item-button pagination__item-button--previous"
+                    aria-label="Предыдущая страница"
                   >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M4.80847 -5.20835e-08L6 1.23899L2.38306 5L6 8.76101L4.80847 10L-2.18557e-07 5L4.80847 -5.20835e-08Z"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li class="pagination__item">
-                <a
-                  href="#"
-                  class="pagination__item-number"
-                  aria-label="Страница 1"
-                  >1</a
-                >
-              </li>
-              <li class="pagination__item">
-                <a class="pagination__item--current" aria-label="Страница 2"
-                  >2</a
-                >
-              </li>
-              <li class="pagination__item">
-                <a
-                  href="#"
-                  class="pagination__item-number"
-                  aria-label="Страница 3"
-                  >3</a
-                >
-              </li>
-              <li class="pagination__item">
-                <a
-                  href="#"
-                  class="pagination__item--next"
-                  aria-label="Следующая страница"
-                ></a>
-              </li>
-            </ul>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="6"
+                      height="10"
+                      viewBox="0 0 6 10"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.80847 -5.20835e-08L6 1.23899L2.38306 5L6 8.76101L4.80847 10L-2.18557e-07 5L4.80847 -5.20835e-08Z"
+                      />
+                    </svg>
+                    <span>Назад</span>
+                  </a>
+                </li>
+                <li class="pagination__item">
+                  <a
+                    href="#"
+                    class="pagination__item-button"
+                    aria-label="Страница 1"
+                    >1</a
+                  >
+                </li>
+                <li class="pagination__item">
+                  <a
+                    class="pagination__item-button pagination__item-button--current"
+                    aria-label="Страница 2"
+                    >2</a
+                  >
+                </li>
+                <li class="pagination__item">
+                  <a
+                    href="#"
+                    class="pagination__item-button"
+                    aria-label="Страница 3"
+                    >3</a
+                  >
+                </li>
+                <li class="pagination__item">
+                  <a
+                    href="#"
+                    class="pagination__item-button pagination__item-button--next"
+                    aria-label="Следующая страница"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="6"
+                      height="10"
+                      viewBox="0 0 6 10"
+                      fill="none"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1.19153 -5.20835e-08L5.41581e-08 1.23899L3.61694 5L3.82956e-07 8.76101L1.19153 10L6 5L1.19153 -5.20835e-08Z"
+                      />
+                    </svg>
+                    <span>Вперёд</span></a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -936,7 +957,7 @@
       </section>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer wrapper">
       <section class="page-footer__social social">
         <picture>
           <source
