@@ -34,13 +34,25 @@
 }
 .social__link {
   padding: 10px;
+  height: 20px;
+  border-radius: 4px;
 
   svg {
     fill: $base-grey;
+  }
 
-    &:hover,
-    &:focus,
-    &:active {
+  &:hover,
+  &:focus {
+    background-color: $base-secondary;
+
+    svg {
+      fill: $base-primary;
+    }
+  }
+  &:active {
+    background-color: $alt-primary-opacity;
+
+    svg {
       fill: $base-primary;
     }
   }
