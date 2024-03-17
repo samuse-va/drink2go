@@ -111,8 +111,8 @@
   border: 2px solid $alt-primary-lighter;
   border-radius: 4px;
   background: $base-white;
-  font-family: inherit;
-  font-size: inherit;
+  font-family: "Montserratmedium", "Arial", sans-serif;
+  font-size: 16px;
 
   &::placeholder {
     color: $base-grey;

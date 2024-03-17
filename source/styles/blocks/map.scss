@@ -2,8 +2,19 @@
   height: 420px;
   @media (min-width: $tablet-width) {
     height: 480px;
+
+    img {
+      width: 768px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   @media (min-width: $desktop-width) {
     height: 540px;
+
+    img {
+      width: 1440px;
+    }
   }
 }
