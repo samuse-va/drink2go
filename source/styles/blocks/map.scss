@@ -1,5 +1,6 @@
 .map {
   height: 420px;
+
   @media (min-width: $tablet-width) {
     height: 480px;
 
@@ -10,6 +11,7 @@
       margin-right: auto;
     }
   }
+
   @media (min-width: $desktop-width) {
     height: 540px;
 

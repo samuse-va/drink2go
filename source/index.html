@@ -11,10 +11,39 @@
       crossorigin=""
     />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="preload"
+      href="fonts/montserratregular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/montserratmedium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/montserratsemibold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="fonts/montserratbold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
   </head>
 
-  <body class="page page__body">
-    <header class="page-header page-header--nojs wrapper">
+  <body class="page__body">
+    <header class="page-header page-header--nojs">
+      <!-- <header class="page-header page-header--nojs wrapper"> -->
       <a class="page-header__logo">
         <picture>
           <source
@@ -30,7 +59,7 @@
             class="page-header__logo-image"
             width="32"
             height="36"
-            alt="Логотип Drink2Go"
+            alt="Логотип Drink2Go."
           />
         </picture>
       </a>
@@ -39,7 +68,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <nav class="main-nav">
-        <ul class="main-nav__list site-list main-nav--closed main-nav--nojs">
+        <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a>Главная</a>
           </li>
@@ -56,7 +85,7 @@
       </nav>
       <ul class="main-nav__list user-list">
         <li class="user-list__item">
-          <a class="user-list__login" href="#">
+          <a class="user-list__login" href="login.html">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -75,9 +104,8 @@
           </a>
         </li>
         <li class="user-list__item">
-          <a class="user-list__cart" href="#">
+          <a class="user-list__cart" href="cart.html">
             <svg
-              class="user-list__cart-icon"
               xmlns="http://www.w3.org/2000/svg"
               width="16"
               height="16"
@@ -96,10 +124,8 @@
       </ul>
     </header>
 
-    <main class="page-main">
-      <h1 class="page-main__title visually-hidden">
-        Интернет-магазин кофейных напитков
-      </h1>
+    <main>
+      <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
       <section class="promotion promotion--1">
         <!-- <div class="wrapper"> -->
         <h2 class="visually-hidden">Акции</h2>
@@ -107,7 +133,7 @@
           <button
             type="button"
             class="promotion__button promotion__button--previous"
-            aria-label="Предыдущий слайд"
+            aria-label="Предыдущий слайд."
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -124,8 +150,8 @@
             </svg>
           </button>
 
-          <div class="promotion__slider-wrapper">
-            <ul class="promotion__slider slider">
+          <div class="slider">
+            <ul class="slider__list">
               <li class="slider__item slider__item--current">
                 <div class="slider__item-text-wrapper">
                   <h3 class="slider__item-title">Декаф Флэт Уайт</h3>
@@ -138,13 +164,10 @@
 
                   <div class="slider__item-order-info">
                     <div class="slider__item-price-info">
-                      <span class="slider__item-price--old">295₽</span>
-                      <span class="slider__item-price">225₽</span>
+                      <span class="slider__item-price-old">295₽</span>
+                      <span class="slider__item-price-new">225₽</span>
                     </div>
-                    <button
-                      class="slider-item__button button button--add"
-                      type="button"
-                    >
+                    <button class="button button--add" type="button">
                       Заказать
                     </button>
                   </div>
@@ -193,7 +216,7 @@
                     srcset="./images/slider/1-mobile@2x.png 2x"
                     width="280"
                     height="280"
-                    alt="Жестяная банка"
+                    alt="Бежевая жестяная банка."
                   />
                 </picture>
               </li>
@@ -209,8 +232,8 @@
 
                   <div class="slider__item-order-info">
                     <div class="slider__item-price-info">
-                      <span class="slider__item-price--old">285₽</span>
-                      <span class="slider__item-price">265₽</span>
+                      <span class="slider__item-price-old">285₽</span>
+                      <span class="slider__item-price-new">265₽</span>
                     </div>
                     <button class="button button--add" type="button">
                       Заказать
@@ -261,7 +284,7 @@
                     srcset="./images/slider/2-mobile@2x.png 2x"
                     width="280"
                     height="280"
-                    alt="Жестяная банка"
+                    alt="Сиреневая жестяная банка."
                   />
                 </picture>
               </li>
@@ -277,13 +300,10 @@
 
                   <div class="slider__item-order-info">
                     <div class="slider__item-price-info">
-                      <span class="slider__item-price--old">395₽</span>
-                      <span class="slider__item-price">375₽</span>
+                      <span class="slider__item-price-old">395₽</span>
+                      <span class="slider__item-price-new">375₽</span>
                     </div>
-                    <button
-                      class="slider-item__button button button--add"
-                      type="button"
-                    >
+                    <button class="button button--add" type="button">
                       Заказать
                     </button>
                   </div>
@@ -332,7 +352,7 @@
                     srcset="./images/slider/3-mobile@2x.png 2x"
                     width="280"
                     height="280"
-                    alt="Жестяная банка"
+                    alt="Чёрная жестяная банка."
                   />
                 </picture>
               </li>
@@ -341,17 +361,17 @@
               <button
                 type="button"
                 class="promotion__slider-button promotion__slider-button--current"
-                aria-label="Первый слайд"
+                aria-label="Первый слайд."
               ></button>
               <button
                 type="button"
                 class="promotion__slider-button"
-                aria-label="Второй слайд"
+                aria-label="Второй слайд."
               ></button>
               <button
                 type="button"
                 class="promotion__slider-button"
-                aria-label="Третий слайд"
+                aria-label="Третий слайд."
               ></button>
             </div>
           </div>
@@ -359,7 +379,7 @@
           <button
             type="button"
             class="promotion__button promotion__button--next"
-            aria-label="Следующий слайд"
+            aria-label="Следующий слайд."
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -379,60 +399,60 @@
         </div>
       </section>
 
-      <section class="features wrapper">
+      <section class="features">
         <h2 class="features__title">Главные причины выбрать Drink2Go</h2>
         <span class="features__badge badge">Преимущества</span>
         <ul class="features__list">
-          <li class="features__item features__item--speed">
+          <li class="features__item">
             <h3 class="features__item-title">Скорость</h3>
             <img
               class="features__item-image"
               src="./images/icons/speed.svg"
               width="52"
               height="56"
-              alt="Таймер"
+              alt="Таймер."
             />
             <p class="features__item-description">
               Готовый напиток всегда под рукой — просто открой банку
             </p>
           </li>
-          <li class="features__item features__item--fit">
+          <li class="features__item">
             <h3 class="features__item-title">Удобство</h3>
             <img
               class="features__item-image"
               src="./images/icons/fit.svg"
               width="52"
               height="56"
-              alt="Карман"
+              alt="Карман."
             />
             <p class="features__item-description">
-              Легко помещается и в карман, и в маленькую сумочку
+              Легко помещается и в карман, и в маленькую сумочку
             </p>
           </li>
-          <li class="features__item features__item--energy">
+          <li class="features__item">
             <h3 class="features__item-title">Бодрость</h3>
             <img
               class="features__item-image"
               src="./images/icons/energy.svg"
               width="52"
               height="56"
-              alt="Молния"
+              alt="Молния."
             />
             <p class="features__item-description">
               Сбалансированная доза кофеина даст мощный заряд энергии
             </p>
           </li>
-          <li class="features__item features__item--eco">
+          <li class="features__item">
             <h3 class="features__item-title">Экологичность</h3>
             <img
               class="features__item-image"
               src="./images/icons/eco.svg"
               width="52"
               height="56"
-              alt="Лист дерева"
+              alt="Лист дерева."
             />
             <p class="features__item-description">
-              Вся упаковка сделана из перерабатываемых материалов
+              Вся упаковка сделана из перерабатываемых материалов
             </p>
           </li>
         </ul>
@@ -663,7 +683,7 @@
                         srcset="./images/catalog/1@2x.png 2x"
                         width="130"
                         height="188"
-                        alt="Жестяная банка"
+                        alt="Бежевая жестяная банка."
                       />
                     </picture>
                   </a>
@@ -696,7 +716,7 @@
                         srcset="./images/catalog/2@2x.png 2x"
                         width="130"
                         height="188"
-                        alt="Жестяная банка"
+                        alt="Сиреневая жестяная банка."
                       />
                     </picture>
                   </a>
@@ -729,7 +749,7 @@
                         srcset="./images/catalog/3@2x.png 2x"
                         width="130"
                         height="188"
-                        alt="Жестяная банка"
+                        alt="Чёрная жестяная банка."
                       />
                     </picture>
                   </a>
@@ -762,7 +782,7 @@
                         srcset="./images/catalog/4@2x.png 2x"
                         width="130"
                         height="188"
-                        alt="Жестяная банка"
+                        alt="Розовая жестяная банка."
                       />
                     </picture>
                   </a>
@@ -795,7 +815,7 @@
                         srcset="./images/catalog/5@2x.png 2x"
                         width="130"
                         height="188"
-                        alt="Жестяная банка"
+                        alt="Коричневая жестяная банка."
                       />
                     </picture>
                   </a>
@@ -828,7 +848,7 @@
                         srcset="./images/catalog/6@2x.png 2x"
                         width="130"
                         height="188"
-                        alt="Жестяная банка"
+                        alt="Жёлтая жестяная банка."
                       />
                     </picture>
                   </a>
@@ -839,7 +859,7 @@
                   <a
                     href="#"
                     class="pagination__item-button pagination__item-button--previous"
-                    aria-label="Предыдущая страница"
+                    aria-label="Предыдущая страница."
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -861,14 +881,14 @@
                   <a
                     href="#"
                     class="pagination__item-button"
-                    aria-label="Страница 1"
+                    aria-label="Страница 1."
                     >1</a
                   >
                 </li>
                 <li class="pagination__item">
                   <a
                     class="pagination__item-button pagination__item-button--current"
-                    aria-label="Страница 2"
+                    aria-label="Страница 2."
                     >2</a
                   >
                 </li>
@@ -876,7 +896,7 @@
                   <a
                     href="#"
                     class="pagination__item-button"
-                    aria-label="Страница 3"
+                    aria-label="Страница 3."
                     >3</a
                   >
                 </li>
@@ -884,7 +904,7 @@
                   <a
                     href="#"
                     class="pagination__item-button pagination__item-button--next"
-                    aria-label="Следующая страница"
+                    aria-label="Следующая страница."
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="6"
@@ -953,7 +973,7 @@
               srcset="./images/map-mobile@2x.png 2x"
               width="320"
               height="420"
-              alt="Карта с указателем"
+              alt="Карта с указателем на адрес Санкт-Петербург, набережная реки Карповки, дом 5."
             />
           </picture>
         </div>
@@ -974,7 +994,7 @@
               class="social__logo-image"
               width="82"
               height="36"
-              alt="Логотип: надпись D2G или Drive2go"
+              alt="Логотип Drive2go."
             />
           </picture>
           <p class="social__description">Интернет-магазин кофейных напитков</p>
@@ -1041,11 +1061,11 @@
       <section class="page-footer__shop">
         <div class="page-footer__wrapper">
           <h2>Интернет-магазин</h2>
-          <ul>
-            <li><a>Каталог</a></li>
-            <li><a>Доставка</a></li>
-            <li><a>Способы оплаты</a></li>
-            <li><a>О нас</a></li>
+          <ul class="page-footer__shop-info">
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Способы оплаты</a></li>
+            <li><a href="#">О нас</a></li>
           </ul>
         </div>
       </section>
@@ -1053,10 +1073,10 @@
       <section class="page-footer__media">
         <div class="page-footer__wrapper">
           <h2>Медиа</h2>
-          <ul>
-            <li><a>Блог</a></li>
-            <li><a>Информация для СМИ</a></li>
-            <li><a>Правовая информация</a></li>
+          <ul class="page-footer__media-list">
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Информация для СМИ</a></li>
+            <li><a href="#">Правовая информация</a></li>
           </ul>
         </div>
       </section>

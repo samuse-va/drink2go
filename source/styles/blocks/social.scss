@@ -36,6 +36,8 @@
   padding: 10px;
   height: 20px;
   border-radius: 4px;
+  display: block;
+  cursor: pointer;
 
   svg {
     fill: $base-grey;
@@ -43,6 +45,7 @@
 
   &:hover,
   &:focus {
+    color: $alt-primary-lighter;
     background-color: $base-secondary;
 
     svg {
@@ -50,6 +53,7 @@
     }
   }
   &:active {
+    color: $alt-primary-darker;
     background-color: $alt-primary-opacity;
 
     svg {

@@ -1,3 +1,25 @@
+.slider {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 60px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 30px;
+    padding-bottom: 84px;
+  }
+}
+
+.slider__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .slider__item {
   display: none;
   flex-direction: column;
@@ -8,9 +30,11 @@
     justify-content: space-between;
   }
 }
+
 .slider__item--current {
   display: flex;
 }
+
 .slider__item-text-wrapper {
   display: grid;
   justify-items: center;
@@ -18,12 +42,14 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 0;
     justify-items: left;
     order: 2;
   }
 }
+
 .slider__item-title {
   margin: 0;
   margin-bottom: 10px;
@@ -39,28 +65,32 @@
     line-height: 80px;
     letter-spacing: 1.12px;
   }
+
   @media (min-width: $desktop-width) {
     text-align: left;
   }
 }
+
 .slider__item-badge {
   order: -1;
 }
+
 .slider__item-description {
   margin: 0;
   margin-bottom: 20px;
   text-align: center;
-  // width: 280px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
     max-width: 608px;
   }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 40px;
     text-align: left;
   }
 }
+
 .slider__item-order-info {
   display: flex;
   gap: 20px;
@@ -71,38 +101,47 @@
     line-height: 32px;
   }
 }
+
 .slider__item-price-info {
   display: flex;
   gap: 6px;
   align-items: center;
 }
-.slider__item-price--old {
+
+.slider__item-price-old {
   color: $base-primary;
   font-size: 16px;
   line-height: 32px;
   text-decoration: line-through;
 }
-.slider__item-price {
+
+.slider__item-price-new {
   font-family: "Montserratbold", "Arial", sans-serif;
   font-size: 20px;
   line-height: 32px;
 }
+
 .slider__item-picture {
   @media (max-width: $mobile-width-only) {
     margin-bottom: 10px;
     order: -2;
+    height: 280px;
   }
+
   @media (min-width: $desktop-width) {
     margin-left: 25px;
   }
 }
+
 .slider__item-image {
   width: 280px;
   height: 280px;
+
   @media (min-width: $tablet-width) {
     width: 476px;
     height: 476px;
   }
+
   @media (min-width: $desktop-width) {
     width: 600px;
     height: 600px;

@@ -8,6 +8,7 @@
   border-radius: 4px;
   cursor: pointer;
 }
+
 .button--add {
   color: $base-white;
   background-color: $base-primary;
@@ -15,13 +16,16 @@
   &:hover {
     background-color: $alt-primary-lighter;
   }
+
   &:active {
     background-color: $alt-primary-darker;
   }
+
   &:disabled {
     background-color: $base-grey;
   }
 }
+
 .button--unset {
   color: $base-primary;
   background-color: $base-white;
@@ -30,10 +34,12 @@
     color: $base-white;
     background-color: $alt-primary-lighter;
   }
+
   &:active {
     color: $base-white;
     background-color: $alt-primary-darker;
   }
+
   &:disabled {
     color: $base-white;
     background-color: $base-grey;

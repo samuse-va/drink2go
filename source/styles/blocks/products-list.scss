@@ -11,11 +11,13 @@
     gap: 30px;
     margin-bottom: 70px;
   }
+
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 60px;
   }
 }
+
 .products-list__item {
   display: grid;
   padding: 40px 20px 20px;
@@ -31,16 +33,18 @@
     box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.15);
   }
 }
+
 .products-list__item-title-link {
   color: $base-black;
   margin-bottom: 4px;
 }
+
 .products-list__item-title {
   font-family: "Montserratbold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 32px;
   margin: 0;
-  margin-bottom: 4px;
+  // margin-bottom: 4px;
 
   @media (min-width: $tablet-width) {
     font-size: 24px;
@@ -48,24 +52,30 @@
     margin-bottom: 10px;
   }
 }
+
 .products-list__item-description {
   margin: 0;
   margin-bottom: 16px;
+  font-size: 14px;
+  line-height: 20px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
   }
 }
+
 .products-list__item-order {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .products-list__item-price {
   font-family: "Montserratsemibold", "Arial", sans-serif;
   font-size: 20px;
   line-height: 32px;
 }
+
 .products-list__item-button {
   width: 141px;
   display: flex;
@@ -89,6 +99,7 @@
     background-image: url(../../images/icons/cart-plus.svg);
   }
 }
+
 .products-list__item-picture-link {
   order: -2;
   justify-self: center;
