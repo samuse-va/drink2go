@@ -90,6 +90,35 @@
   }
 }
 
+.page-header--nojs {
+  @media (max-width: $mobile-width-only) {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-areas:
+      "logo user button"
+      "menu menu menu";
+
+    .page-header__logo {
+      grid-area: logo;
+    }
+
+    .page-header__nav-toggle {
+      grid-area: button;
+    }
+
+    .main-nav {
+      grid-area: menu;
+      position: unset;
+      top: unset;
+      left: unset;
+    }
+
+    .user-list {
+      grid-area: user;
+    }
+  }
+}
+
 .page-header--nojs .site-list__item {
   display: block;
 }
