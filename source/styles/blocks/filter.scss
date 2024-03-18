@@ -319,8 +319,10 @@
   transition: 2ms;
 }
 
-.filter__input-checkbox:disabled + .filter__option-label::before {
+.filter__input-checkbox:disabled + .filter__option-label::before,
+.filter__input-checkbox:disabled:hover + .filter__option-label::before {
   background-color: $alt-light-grey;
+  border: none;
 }
 
 .filter__input-checkbox:disabled:checked + .filter__option-label::after,
