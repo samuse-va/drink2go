@@ -10,10 +10,12 @@
     justify-content: flex-end;
   }
 }
+
 .sorting__title {
   margin: 0;
   font-family: "Montserratsemibold", "Arial", sans-serif;
 }
+
 .sorting__select {
   list-style: none;
   margin: 0;
@@ -35,12 +37,4 @@
     outline: none;
   }
 }
-// // .sorting__select-item {
-// //   font-family: "Montserrat", "Arial", sans-serif;
-// //   font-size: 16px;
-// //   line-height: 24px;
 
-// //   &:hover {
-// //     background-color: $base-secondary;
-// //   }
-// // }

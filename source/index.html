@@ -469,26 +469,33 @@
               action="https://echo.htmlacademy.ru"
             >
               <div class="catalog__filter-wrapper">
-                <fieldset class="catalog__fieldset filter price">
+                <fieldset class="filter">
                   <legend class="filter__field">Цена</legend>
-                  <div class="price-control">
-                    <div class="range-controls">
-                      <div class="scale"></div>
-                      <div class="toggle toggle-min" tabindex="0"></div>
-                      <div class="toggle toggle-max" tabindex="0"></div>
+                  <div class="filter__price-controls">
+                    <!-- Чтобы сделать состояние disabled, необходимо добавить класс filter__price-range--disabled -->
+                    <div class="filter__price-range">
+                      <div class="filter__price-scale"></div>
+                      <div
+                        class="filter__price-toggle filter__price-toggle--min"
+                        tabindex="0"
+                      ></div>
+                      <div
+                        class="filter__price-toggle filter__price-toggle--max"
+                        tabindex="0"
+                      ></div>
                     </div>
-                    <div class="price-controls">
-                      <label class="min-price">
+                    <div class="filter__price-inputs">
+                      <label>
                         <input type="number" name="min-price" placeholder="0" />
                       </label>
-                      <label class="max-price">
+                      <label>
                         <input type="number" name="max-price" value="123" />
                       </label>
                     </div>
                   </div>
                 </fieldset>
 
-                <fieldset class="catalog__fieldset filter milk">
+                <fieldset class="filter">
                   <legend class="filter__field">Наличие молока</legend>
                   <ul class="filter__options-list">
                     <li class="filter__option-radio">
@@ -548,7 +555,7 @@
                   </ul>
                 </fieldset>
 
-                <fieldset class="catalog__fieldset filter country">
+                <fieldset class="filter">
                   <legend class="filter__field">Страна произрастания</legend>
                   <ul class="filter__options-list">
                     <li class="filter__option-checkbox">
@@ -635,22 +642,14 @@
               </div>
             </form>
 
-            <div class="products-list__wrapper">
+            <div>
               <div class="sorting">
                 <p class="sorting__title">Сортировка:</p>
                 <select class="sorting__select">
-                  <option class="sorting__select-item" value="default" selected>
-                    по умолчанию
-                  </option>
-                  <option class="sorting__select-item" value="expensive">
-                    сначала дорогие
-                  </option>
-                  <option class="sorting__select-item" value="cheap">
-                    сначала дешёвые
-                  </option>
-                  <option class="sorting__select-item" value="rating">
-                    высокий рейтинг
-                  </option>
+                  <option value="default" selected>по умолчанию</option>
+                  <option value="expensive">сначала дорогие</option>
+                  <option value="cheap">сначала дешёвые</option>
+                  <option value="rating">высокий рейтинг</option>
                 </select>
               </div>
 
@@ -669,7 +668,7 @@
                     </button>
                   </div>
                   <a href="#" class="products-list__item-picture-link">
-                    <picture class="products-list__item-picture">
+                    <picture>
                       <source
                         type="image/webp"
                         srcset="
@@ -679,7 +678,6 @@
                       />
                       <img
                         src="./images/catalog/1@1x.png"
-                        class="products-list__item-image"
                         srcset="./images/catalog/1@2x.png 2x"
                         width="130"
                         height="188"
@@ -702,7 +700,7 @@
                     </button>
                   </div>
                   <a href="#" class="products-list__item-picture-link">
-                    <picture class="products-list__item-picture">
+                    <picture>
                       <source
                         type="image/webp"
                         srcset="
@@ -712,7 +710,6 @@
                       />
                       <img
                         src="./images/catalog/2@1x.png"
-                        class="products-list__item-image"
                         srcset="./images/catalog/2@2x.png 2x"
                         width="130"
                         height="188"
@@ -735,7 +732,7 @@
                     </button>
                   </div>
                   <a href="#" class="products-list__item-picture-link">
-                    <picture class="products-list__item-picture">
+                    <picture>
                       <source
                         type="image/webp"
                         srcset="
@@ -745,7 +742,6 @@
                       />
                       <img
                         src="./images/catalog/3@1x.png"
-                        class="products-list__item-image"
                         srcset="./images/catalog/3@2x.png 2x"
                         width="130"
                         height="188"
@@ -768,7 +764,7 @@
                     </button>
                   </div>
                   <a href="#" class="products-list__item-picture-link">
-                    <picture class="products-list__item-picture">
+                    <picture>
                       <source
                         type="image/webp"
                         srcset="
@@ -778,7 +774,6 @@
                       />
                       <img
                         src="./images/catalog/4@1x.png"
-                        class="products-list__item-image"
                         srcset="./images/catalog/4@2x.png 2x"
                         width="130"
                         height="188"
@@ -801,7 +796,7 @@
                     </button>
                   </div>
                   <a href="#" class="products-list__item-picture-link">
-                    <picture class="products-list__item-picture">
+                    <picture>
                       <source
                         type="image/webp"
                         srcset="
@@ -811,7 +806,6 @@
                       />
                       <img
                         src="./images/catalog/5@1x.png"
-                        class="products-list__item-image"
                         srcset="./images/catalog/5@2x.png 2x"
                         width="130"
                         height="188"
@@ -834,7 +828,7 @@
                     </button>
                   </div>
                   <a href="#" class="products-list__item-picture-link">
-                    <picture class="products-list__item-picture">
+                    <picture>
                       <source
                         type="image/webp"
                         srcset="
@@ -844,7 +838,6 @@
                       />
                       <img
                         src="./images/catalog/6@1x.png"
-                        class="products-list__item-image"
                         srcset="./images/catalog/6@2x.png 2x"
                         width="130"
                         height="188"
@@ -855,7 +848,8 @@
                 </li>
               </ul>
               <ul class="pagination">
-                <li class="pagination__item">
+                <li>
+                  <!-- Чтобы сделать состояние, disabled необходимо добавить класс pagination__item-button--disabled -->
                   <a
                     href="#"
                     class="pagination__item-button pagination__item-button--previous"
@@ -877,7 +871,7 @@
                     <span>Назад</span>
                   </a>
                 </li>
-                <li class="pagination__item">
+                <li>
                   <a
                     href="#"
                     class="pagination__item-button"
@@ -885,14 +879,14 @@
                     >1</a
                   >
                 </li>
-                <li class="pagination__item">
+                <li>
                   <a
                     class="pagination__item-button pagination__item-button--current"
                     aria-label="Страница 2."
                     >2</a
                   >
                 </li>
-                <li class="pagination__item">
+                <li>
                   <a
                     href="#"
                     class="pagination__item-button"
@@ -900,7 +894,7 @@
                     >3</a
                   >
                 </li>
-                <li class="pagination__item">
+                <li>
                   <a
                     href="#"
                     class="pagination__item-button pagination__item-button--next"
@@ -1081,13 +1075,13 @@
         </div>
       </section>
 
-      <section class="page-footer__contacts contacts">
+      <section class="page-footer__contacts">
         <div class="page-footer__wrapper">
           <h2>Контакты</h2>
-          <p class="contacts-address">
+          <p class="page-footer__contacts-address">
             Санкт-Петербург, набережная реки Карповки, дом 5
           </p>
-          <a href="tel:79999999999" class="contacts-phone"
+          <a href="tel:79999999999" class="page-footer__contacts-phone"
             >+7 (999) 999-99-99</a
           >
         </div>
