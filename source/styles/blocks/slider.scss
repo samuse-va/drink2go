@@ -27,7 +27,7 @@
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    justify-content: space-between;
+    gap: 30px;
   }
 }
 
@@ -83,6 +83,8 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
     max-width: 608px;
+    font-size: 20px;
+    line-height: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -128,8 +130,13 @@
     height: 280px;
   }
 
+  @media (min-width: $tablet-width) {
+    height: 476px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 25px;
+    height: 600px;
   }
 }
 

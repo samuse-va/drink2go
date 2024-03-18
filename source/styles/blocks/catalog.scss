@@ -46,7 +46,7 @@
   line-height: 24px;
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 318px 3fr;
     gap: 30px;
   }
 }
@@ -64,18 +64,17 @@
 }
 
 .catalog__filter-wrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   gap: 30px;
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 

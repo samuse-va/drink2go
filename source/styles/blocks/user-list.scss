@@ -20,6 +20,7 @@
 .user-list__item {
   @media (min-width: $desktop-width) {
     margin-right: 20px;
+    text-transform: uppercase;
 
     &:last-child {
       margin-right: 0;
@@ -40,6 +41,8 @@
   span {
     position: absolute;
     opacity: 0;
+    width: 60px;
+    left: 0;
   }
 
   &:active {
@@ -71,6 +74,7 @@
     span {
       position: static;
       opacity: 1;
+      width: unset;
     }
   }
 }

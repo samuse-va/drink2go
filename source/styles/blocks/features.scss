@@ -7,12 +7,12 @@
   margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 100px;
+    padding: 60px 20px 100px;
     width: 728px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0 120px;
+    padding: 100px 20px 120px;
     width: 1360px;
   }
 }
@@ -83,6 +83,7 @@
         "title"
         "description";
       justify-items: center;
+      column-gap: unset;
     }
   }
 }
@@ -110,6 +111,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
   }
 }
 

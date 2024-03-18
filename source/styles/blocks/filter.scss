@@ -20,6 +20,14 @@
 
 .filter__price-controls {
   width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+  }
 }
 
 .filter__price-range {
@@ -49,7 +57,6 @@
 .filter__price-toggle {
   position: absolute;
   top: 0;
-  left: 0;
   width: 24px;
   height: 24px;
   box-sizing: border-box;
@@ -95,6 +102,14 @@
 
 .filter__price-toggle--max {
   left: 85%;
+
+  @media (min-width: $tablet-width) {
+    left: 80%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 85%;
+  }
 }
 
 .filter__price-range--disabled {
@@ -169,6 +184,14 @@
       color: $base-grey;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    width: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+  }
 }
 
 .filter__price-inputs input[type="number"]::-webkit-inner-spin-button,
@@ -195,7 +218,7 @@
 .filter__input-radio + .filter__option-label::before {
   content: "";
   position: absolute;
-  left: -34px;
+  left: -32px;
   top: 0;
   box-sizing: border-box;
   width: 24px;
@@ -209,7 +232,7 @@
   content: "";
   position: absolute;
   top: 4px;
-  left: -30px;
+  left: -28px;
   width: 16px;
   height: 16px;
   background-color: $base-white;
@@ -259,7 +282,7 @@
 .filter__input-checkbox + .filter__option-label::before {
   content: "";
   position: absolute;
-  left: -52px;
+  left: -50px;
   top: 0;
   box-sizing: border-box;
   width: 42px;
@@ -272,7 +295,7 @@
   content: "";
   position: absolute;
   top: 2px;
-  left: -50px;
+  left: -48px;
   width: 20px;
   height: 20px;
   background-color: $base-white;

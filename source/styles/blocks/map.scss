@@ -1,5 +1,6 @@
 .map {
   height: 420px;
+  background-color: $alt-light-grey;
 
   @media (min-width: $tablet-width) {
     height: 480px;

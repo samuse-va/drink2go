@@ -24,6 +24,10 @@
     height: 36px;
   }
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin-right: 20px;
   }
