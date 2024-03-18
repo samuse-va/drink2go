@@ -314,7 +314,7 @@
 }
 
 .filter__input-checkbox:checked + .filter__option-label::after {
-  left: -32px;
+  left: -30px;
   background-color: $base-white;
   transition: 2ms;
 }

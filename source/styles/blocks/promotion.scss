@@ -49,7 +49,6 @@
 .promotion__actions {
   display: grid;
   grid-template-columns: auto 280px auto;
-  // width: 320px;
   margin-left: auto;
   margin-right: auto;
 
@@ -72,6 +71,7 @@
 
   svg {
     position: absolute;
+    top: calc(50% - 10px);
     fill: $base-primary;
     width: 11px;
     height: 20px;
@@ -161,9 +161,8 @@
   background-color: $base-white;
   cursor: pointer;
 
-  &:hover
-  // , &:focus  ??
-  {
+  &:hover,
+  &:focus {
     background-color: $alt-primary-opacity;
   }
 
