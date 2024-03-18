@@ -48,10 +48,17 @@
 
 .promotion__actions {
   display: grid;
-  grid-template-columns: 20px 1fr 20px;
+  grid-template-columns: auto 280px auto;
+  // width: 320px;
+  margin-left: auto;
+  margin-right: auto;
 
   @media (min-width: $tablet-width) {
-    grid-template-columns: 80px 1fr 80px;
+    grid-template-columns: auto 608px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto 1280px auto;
   }
 }
 
@@ -64,6 +71,7 @@
   cursor: pointer;
 
   svg {
+    position: absolute;
     fill: $base-primary;
     width: 11px;
     height: 20px;
@@ -85,6 +93,14 @@
 }
 
 .promotion__button--previous {
+  svg {
+    right: 5px;
+
+    @media (min-width: $tablet-width) {
+      right: 35px;
+    }
+  }
+
   &:hover,
   &:focus {
     background: linear-gradient(90deg, #fff 0%, rgba(255, 255, 255, 0) 100%);
@@ -100,6 +116,14 @@
 }
 
 .promotion__button--next {
+  svg {
+    left: 5px;
+
+    @media (min-width: $tablet-width) {
+      left: 35px;
+    }
+  }
+
   &:hover,
   &:focus {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%);

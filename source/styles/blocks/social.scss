@@ -2,23 +2,25 @@
   display: flex;
   justify-content: space-between;
 
-  
   @media (min-width: $desktop-width) {
     flex-direction: column;
     justify-content: unset;
   }
 }
 
+.social__logo {
+  height: 36px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 10px;
+  }
+}
 .social__logo-image {
   width: 82px;
   height: 36px;
 
   @media (min-width: $tablet-width) {
     width: 170px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 10px;
   }
 }
 
